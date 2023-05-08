@@ -1,1 +1,1 @@
-# HowToPlay-UNO-All-In-One
+# Jak-Grac-W-UNO-Wszystkie-Edycje
