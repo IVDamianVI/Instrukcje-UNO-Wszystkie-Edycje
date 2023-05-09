@@ -6,368 +6,458 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css\style-index.css">
-    <link rel="stylesheet" href="css\style-uno-flip.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\style-loader-uno.css">
+    <link rel="stylesheet" href="css\style-card.css">
+    <link rel="stylesheet" href="css\style-scrollbar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="icon" href="logo\uno-logo-flip.png">
 
     <title>UNO FLIP!</title>
 </head>
 
 <body>
-    <iframe src="header.html" frameborder="0"></iframe>
-
-    <div id="main">
-        <br><br><br><br><br><br>
-        <div>
-            <div class="left-side-page">
-                <img src="logo\uno-box-flip.png" width="60%">
-            </div>
-            <div class="right-side-page">
-                <h1>Zawartość</h1>
-                <p><b>112 kart, w tym:</b></p>
-                <p>
-                    <span id="light-side"><b>JASNA STRONA (białe obramowanie)</b></span><br>
-                    18 kart niebieskich od 1 do 9<br>
-                    18 kart zielonych od 1 do 9<br>
-                    18 kart czerwonych od 1 do 9<br>
-                    18 kart żółtych od 1 do 9<br>
-                    8 kart "Weź jedną" - po 2 w kolorach niebieskim, zielonym, czerwonym i żółtym<br>
-                    8 kart "Zmiana kierunku" - po 2 w kolorach niebieskim, zielonym, czerwonym i żółtym<br>
-                    8 kart "Postój" - po 2 w kolorach niebieskim, zielonym, czerwonym i żółtym<br>
-                    8 kart "Odwróć" po 2 w kolorach niebieskim, zielonym, czerwonym i żółtym<br>
-                    4 karty "Wybierz kolor"<br>
-                    4 karty "Wybierz kolor + weź dwie"
-                </p>
-                <p>
-                    <span id="dark-side"><b>CIEMNA STRONA (czarne obramowanie)</b></span><br>
-                    18 kart różowych - od 1 do 9<br>
-                    18 kart turkusowych od 1 do 9<br>
-                    18 kart pomarańczowych - od 1 do 9<br>
-                    18 kart fioletowych - od 1 do 9<br>
-                    8 kart "Weź pięć" - po 2 w kolorach różowym, turkusowym, pomarańczowym i fioletowym<br>
-                    8 kart "Zmiana kierunku" — po 2 w kolorach różowym, turkusowym, pomarańczowym i fioletowym<br>
-                    8 kart "Postój dla wszystkich graczy" - po 2 w kolorach różowym, turkusowym, pomarańczowym i
-                    fioletowym<br>
-                    8 kart "Odwróć" - po 2 w kolorach różowym, turkusowym, pomarańczowym i fioletowym<br>
-                    4 karty "Wybierz kolor"<br>
-                    4 karty "Wybierz kolor + weź w tym kolorze"
-                </p>
-            </div>
+    <!--! LOADING SCREEN -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="uno-card"></div>
         </div>
-        <h1>UNO FLIP W SKRÓCIE</h1>
-        <p>
-            Gra w UNO FLIP przebiega podobnie jak standardowa gra w UNO. Różnica polega na tym, że karty mają dwie
-            strony — "jasną” i "ciemną”. Na początku gra się z użyciem jasnej strony kart, ale za każdym razem, gdy
-            któryś z graczy użyje karty "Odwróć", talia kart zostaje odwrócona (podobnie jak karty w rękach graczy) i
-            wszyscy grają z użyciem ciemnej strony kart. Podczas gry z użyciem ciemnej strony kart używa się innych kart
-            specjalnych, które nakładają bardziej surowe kary. Gracze muszą grać z użyciem ciemnej strony kart, dopóki
-            jeden z nich nie użyje kolejnej karty "Odwróć". W takim przypadku gra ponownie odbywa się z użyciem jasnej
-            strony aż do momentu, gdy jeden z graczy nie pozbędzie się wszystkich kart z ręki, kończąc tym samym rundę.
-            Celem gry jest standardowo jak najszybsze pozbycie się wszystkich swoich kart w każdej rundzie i zdobycie
-            punktów za wszystkie karty, które pozostaną w rękach innych graczy. Punkty zdobyte w kolejnych rundach są
-            sumowane. Zwycięża gracz, który jako pierwszy zdobędzie 500 punktów.
-        </p>
-        <h1>PRZYGOTOWANIE DO GRY</h1>
-        <p>
-            Karty w talii mają dwie strony, więc należy się upewnić, że wszystkie kart są ułożone tak, aby jasna strona
-            każdej karty była skierowana w jednym kierunku, a ciemna w drugim.
-            <br>
-            Każdy gracz wybiera kartę, a następnie odsłania jej jasną stronę. Gracz, który wybierze kartę z najwyższym
-            numerem, zostaje rozdającym (karty z symbolami są liczone jako karty z numerem zero).
-            <br>
-            Osoba rozdająca tasuje karty i rozdaje wszystkim graczom po 7 kart. Karty należy trzymać ustawione jasną
-            stroną do siebie i ciemną stroną do innych graczy.
-            <br>
-            Pozostałe karty z talii należy skierować jasną stroną w dół i utworzyć z nich stos LOSOWANIA (karty będą
-            skierowane ciemną stroną DO GÓRY).
-            <br>
-            Karta znajdująca się na samej górze stosu LOSOWANIA rozpoczyna stos ROZGRYWKI (karty będą skierowane jasną
-            stroną do góry).
-            <br>
-            <b>UWAGA:</b> Jeśli stos ROZGRYWKI rozpoczyna któraś z kart specjalnych (z symbolem), należy postępować
-            zgodnie ze
-            wskazówkami zamieszczonymi w części FUNKCJE KART SPECJALNYCH
-        </p>
-        <h1>ZAGRAJMY!</h1>
-        <p>
-            Grę rozpoczyna pierwsza osoba na lewo od rozdającego.
-            <br>
-            Niezależnie od tego, czy gra przebiega z użyciem jasnej czy ciemnej strony kart, gracz ma za zadanie położyć
-            na stosie ROZGRYWKI kartę ze swojej puli, która ma taki sam numer, kolor lub symbol (symbolami oznaczone są
-            karty specjalne opisane w części FUNKCJE KART SPECJALNYCH).
-            <br>
-            <b>PRZYKŁAD:</b> Jeśli na stosie ROZGRYWKI znajduje się niebieska siódemka, gracz musi wyłożyć dowolną
-            niebieską
-            kartę LUB siódemkę w dowolnym kolorze. Ewentualnie gracz może wyłożyć kartę "Wybierz kolor" (opis w części
-            FUNKCJE KART SPECJALNYCH).
-            <br>
-            Jeśli gracz nie ma karty, którą mógłby położyć na stosie ROZGRYWKI, musi wziąć kartę ze stosu LOSOWANIA.
-            <br>
-            <b>UWAGA:</b> Podczas dodawania kart do ręki należy się upewnić, że są one zwrócone w tym samym kierunku, co
-            pozostałe karty w ręku. Na przykład, jeśli gra akurat przebiega z użyciem jasnej strony, dodaj karty do ręki
-            tak, aby były skierowane jasną stroną w Twoim kierunku.
-            <br>
-            Jeśli wylosowana karta pasuje do karty na stosie ROZGRYWKI, to gracz może nią zagrać w tej samej kolejce. W
-            przeciwnym wypadku kolejka przechodzi na następną osobę.
-            <br>
-            Gracz może NIE zagrać kartą ze swojej puli, nawet jeżeli mógłby ją wyłożyć. W takiej sytuacji gracz musi
-            wziąć kartę ze stosu LOSOWANIA. Jeśli karta pasuje, to gracz może ją wyłożyć w tej samej kolejce, jednak po
-            wylosowaniu nie może w tej kolejce zagrać inną kartą ze swojej puli.
-        </p>
-        <h1>FUNKCJE KART SPECJALNYCH</h1>
-        <span id="light-side"><b>JASNA STRONA (białe obramowanie)</b></span>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-+1-r.png" class="card" id="Plus1-card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Weź jedną"</b> – jeżeli gracz położy tę kartę, to następny gracz musi wziąć jedną kartę ze
-                    stosu
-                    LOSOWANIA i traci swoją kolejkę. Kartę tę można wyłożyć jedynie na kartę o takim samym kolorze lub
-                    na inną kartę "Weź jedną". Jeśli karta ta zostanie odwrócona na początku rozgrywki, to działa w taki
-                    sam sposób, jak opisano powyżej.
-                </p>
-            </div>
-            <script src="js\script-card-change-+1.js"></script>
+    </div>
+    <script src="js\script-loader.js"></script>
+    <!--! PAGE -->
+    <main class="animate__animated animate__fadeIn">
+        <!--! PROGRESS BAR -->
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
         </div>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-light-direction-r.png" class="card" id="light-direction-card">
-            </div>
+        <script src="js\script-progress.js"></script>
+        <!--! HEADER -->
+        <iframe src="header.html" frameborder="0"></iframe>
+        <!--! CONTENT -->
+        <div id="main">
+            <br><br><br><br><br><br>
             <div class="card-description">
-                <p>
-                    <b>Karta "Zmiana kierunku"</b> - po wyłożeniu tej karty zmienia się kierunek gry (jeśli dotychczas
-                    gra
-                    przebiegała w lewą stronę, teraz będzie przebiegać w prawo i na odwrót). Kartę tę można wyłożyć
-                    jedynie na kartę o takim samym kolorze lub na inną kartę "Zmiana kierunku". Jeśli karta ta zostanie
-                    odwrócona na początku rozgrywki, to grę rozpoczyna osoba rozdająca, a następnie gra toczy się w
-                    prawo, a nie w lewo.
-                </p>
+                <div class="left-side-page">
+                    <img src="logo\uno-box-flip.png" class="box">
+                </div>
+                <div class="card-description">
+                    <h1>Zawartość</h1>
+                    <p><b>112 kart, w tym:</b></p>
+                    <p>
+                        <span id="light-side"><b>JASNA STRONA (białe obramowanie)</b></span><br>
+                        18 kart <span class="blue-text">niebieskich</span> - od 0 do 9<br>
+                        18 kart <span class="green-text">zielonych</span> - od 0 do 9<br>
+                        18 kart <span class="red-text">czerwonych</span> - od 0 do 9<br>
+                        18 kart <span class="yellow-text">żółtych</span> - od 0 do 9<br>
+                        8 kart "Weź jedną" - po 2 w kolorach <span class="blue-text">niebieskim</span>, <span
+                            class="green-text">zielonym</span>, <span class="red-text">czerwonym</span> i <span
+                            class="yellow-text">żółtym</span><br>
+                        8 kart "Zmiana kierunku" - po 2 w kolorach <span class="blue-text">niebieskim</span>, <span
+                            class="green-text">zielonym</span>, <span class="red-text">czerwonym</span> i <span
+                            class="yellow-text">żółtym</span><br>
+                        8 kart "Postój" - po 2 w kolorach <span class="blue-text">niebieskim</span>, <span
+                            class="green-text">zielonym</span>, <span class="red-text">czerwonym</span> i <span
+                            class="yellow-text">żółtym</span><br>
+                        8 kart "Odwróć" po 2 w kolorach <span class="blue-text">niebieskim</span>, <span
+                            class="green-text">zielonym</span>, <span class="red-text">czerwonym</span> i <span
+                            class="yellow-text">żółtym</span><br>
+                        4 karty "Wybierz kolor"<br>
+                        4 karty "Wybierz kolor + weź dwie"
+                    </p>
+                    <p>
+                        <span id="dark-side"><b>CIEMNA STRONA (czarne obramowanie)</b></span><br>
+                        18 kart <span class="pink-text">różowych</span> - od 1 do 9<br>
+                        18 kart <span class="cyan-text">turkusowych</span> od 1 do 9<br>
+                        18 kart <span class="orange-text">pomarańczowych</span> - od 1 do 9<br>
+                        18 kart <span class="purple-text">fioletowych</span> - od 1 do 9<br>
+                        8 kart "Weź pięć" - po 2 w kolorach <span class="pink-text">różowym</span>, <span class="cyan-text">turkusowym</span>, <span class="orange-text">pomarańczowym</span> i <span class="purple-text">fioletowym</span><br>
+                        8 kart "Zmiana kierunku" — po 2 w kolorach <span class="pink-text">różowym</span>, <span class="cyan-text">turkusowym</span>, <span class="orange-text">pomarańczowym</span> i <span class="purple-text">fioletowym</span><br>
+                        8 kart "Postój dla wszystkich graczy" - po 2 w kolorach <span class="pink-text">różowym</span>, <span class="cyan-text">turkusowym</span>, <span class="orange-text">pomarańczowym</span> i
+                        <span class="purple-text">fioletowym</span><br>
+                        8 kart "Odwróć" - po 2 w kolorach <span class="pink-text">różowym</span>, <span class="cyan-text">turkusowym</span>, <span class="orange-text">pomarańczowym</span> i <span class="purple-text">fioletowym</span><br>
+                        4 karty "Wybierz kolor"<br>
+                        4 karty "Wybierz kolor + weź w tym kolorze"
+                    </p>
+                </div>
             </div>
-            <script src="js\script-card-change-flip-light-direction.js"></script>
-        </div>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-stop-r.png" class="card" id="stop-light-card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Postój"</b> - jeżeli gracz położy tę kartę, następny gracz traci kolejkę i ma "postój".
-                    Kartę tę
-                    można wyłożyć jedynie na kartę o takim samym kolorze lub na inną kartę "Postój". Jeśli karta
-                    "Postój" zostanie odwrócona na początku rozgrywki, to gracz znajdujący się na lewo od rozdającego
-                    zostaje pominięty, a grę rozpoczyna osoba znajdująca się na lewo od tego gracza.
-                </p>
-            </div>
-            <script src="js\script-card-change-flip-stop.js"></script>
-        </div>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-r.png" class="card" id="flip-light-card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Odwróć"</b> - po wyłożeniu tej karty wszystkie karty zostają odwrócone z
-                    jasnej strony na ciemną. Po wyłożeniu karty Odwróć należy odwrócić stos ROZGRYWKI (ostatnia użyta
-                    karta będzie teraz na jego spodzie) i stos LOSOWANIA. Wszyscy gracze muszą również odwrócić karty
-                    trzymane w ręku. Rozgrywka będzie przebiegać z użyciem tej strony, dopóki któryś z graczy nie wyłoży
-                    kolejnej karty "Odwróć". Kartę tę można wyłożyć jedynie na kartę o takim samym kolorze lub na inną
-                    kartę "Odwróć".
-                </p>
-            </div>
-            <script src="js\script-card-change-flip-light.js"></script>
-        </div>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-pick-color.png" class="card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Wybierz kolor"</b> - gracz, który wykłada tę kartę, ustala kolor, od
-                    którego będzie kontynuowana rozgrywka (dowolny kolor, także ten, który poprzedzał wyłożenie karty
-                    "Wybierz kolor"). Gracz może wyłożyć kartę "Wybierz kolor", nawet jeśli ma w swojej puli inną kartę,
-                    którą mógłby wyłożyć. Jeśli karta "Wybierz kolor" zostanie odwrócona na początku rozgrywki, to gracz
-                    znajdujący się na lewo od osoby rozdającej ustala kolor, od którego będzie kontynuowana rozgrywka.
-                </p>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-+2.png" class="card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Wybierz kolor + weź dwie"</b> - karta ta pozwala wybrać kolor, od
-                    którego ma być kontynuowana rozgrywka, a PONADTO powoduje, że kolejny gracz musi wziąć dwie karty ze
-                    stosu LOSOWANIA i dodatkowo opuszcza kolejkę. Ale to nie wszystko! Gracz może wyłożyć tę kartę tylko
-                    wtedy, gdy NIE ma w swojej puli karty o takim samym KOLORZE co karta na stosie ROZGRYWKI (jednak
-                    gracz może wyłożyć tę kartę, jeśli ma pasujący numer lub kartę specjalną). Jeśli karta ta zostanie
-                    odwrócona na początku rozgrywki, to należy ją zwrócić do talii i wybrać inną kartę.
-                </p>
-            </div>
+            <h1>UNO FLIP W SKRÓCIE</h1>
             <p>
-                <i>
-                    UWAGA: Jeśli gracz przypuszcza, że jego poprzednik wyłożył kartę "Wybierz kolor + weź dwie" wbrew
-                    zasadom (tj. gracz, który ją wyłożył, ma w swojej puli kartę o pasującym kolorze), to może rzucić mu
-                    wyzwanie. Podejrzewany gracz musi pokazać swoje karty graczowi rzucającemu wyzwanie. Jeśli
-                    podejrzewany gracz jest winny, wówczas to on, a nie kolejny gracz, musi wylosować 2 karty. Jednak
-                    jeśli podejrzewany gracz jest niewinny, to gracz rzucający wyzwanie musi wylosować 2 karty PLUS 2
-                    dodatkowe karty (razem 4 karty)!
-                </i>
+                Gra w UNO FLIP przebiega podobnie jak standardowa gra w UNO. Różnica polega na tym, że karty mają dwie
+                strony — "jasną” i "ciemną”. Na początku gra się z użyciem jasnej strony kart, ale za każdym razem, gdy
+                któryś z graczy użyje karty "Odwróć", talia kart zostaje odwrócona (podobnie jak karty w rękach graczy)
+                i
+                wszyscy grają z użyciem ciemnej strony kart. Podczas gry z użyciem ciemnej strony kart używa się innych
+                kart
+                specjalnych, które nakładają bardziej surowe kary. Gracze muszą grać z użyciem ciemnej strony kart,
+                dopóki
+                jeden z nich nie użyje kolejnej karty "Odwróć". W takim przypadku gra ponownie odbywa się z użyciem
+                jasnej
+                strony aż do momentu, gdy jeden z graczy nie pozbędzie się wszystkich kart z ręki, kończąc tym samym
+                rundę.
+                Celem gry jest standardowo jak najszybsze pozbycie się wszystkich swoich kart w każdej rundzie i
+                zdobycie
+                punktów za wszystkie karty, które pozostaną w rękach innych graczy. Punkty zdobyte w kolejnych rundach
+                są
+                sumowane. Zwycięża gracz, który jako pierwszy zdobędzie 500 punktów.
+            </p>
+            <h1>PRZYGOTOWANIE DO GRY</h1>
+            <p>
+                Karty w talii mają dwie strony, więc należy się upewnić, że wszystkie kart są ułożone tak, aby jasna
+                strona
+                każdej karty była skierowana w jednym kierunku, a ciemna w drugim.
+                <br>
+                Każdy gracz wybiera kartę, a następnie odsłania jej jasną stronę. Gracz, który wybierze kartę z
+                najwyższym
+                numerem, zostaje rozdającym (karty z symbolami są liczone jako karty z numerem zero).
+                <br>
+                Osoba rozdająca tasuje karty i rozdaje wszystkim graczom po 7 kart. Karty należy trzymać ustawione jasną
+                stroną do siebie i ciemną stroną do innych graczy.
+                <br>
+                Pozostałe karty z talii należy skierować jasną stroną w dół i utworzyć z nich stos LOSOWANIA (karty będą
+                skierowane ciemną stroną DO GÓRY).
+                <br>
+                Karta znajdująca się na samej górze stosu LOSOWANIA rozpoczyna stos ROZGRYWKI (karty będą skierowane
+                jasną
+                stroną do góry).
+                <br>
+                <b>UWAGA:</b> Jeśli stos ROZGRYWKI rozpoczyna któraś z kart specjalnych (z symbolem), należy postępować
+                zgodnie ze
+                wskazówkami zamieszczonymi w części FUNKCJE KART SPECJALNYCH
+            </p>
+            <h1>ZAGRAJMY!</h1>
+            <p>
+                Grę rozpoczyna pierwsza osoba na lewo od rozdającego.
+                <br>
+                Niezależnie od tego, czy gra przebiega z użyciem jasnej czy ciemnej strony kart, gracz ma za zadanie
+                położyć
+                na stosie ROZGRYWKI kartę ze swojej puli, która ma taki sam numer, kolor lub symbol (symbolami oznaczone
+                są
+                karty specjalne opisane w części FUNKCJE KART SPECJALNYCH).
+                <br>
+                <b>PRZYKŁAD:</b> Jeśli na stosie ROZGRYWKI znajduje się niebieska siódemka, gracz musi wyłożyć dowolną
+                niebieską
+                kartę LUB siódemkę w dowolnym kolorze. Ewentualnie gracz może wyłożyć kartę "Wybierz kolor" (opis w
+                części
+                FUNKCJE KART SPECJALNYCH).
+                <br>
+                Jeśli gracz nie ma karty, którą mógłby położyć na stosie ROZGRYWKI, musi wziąć kartę ze stosu LOSOWANIA.
+                <br>
+                <b>UWAGA:</b> Podczas dodawania kart do ręki należy się upewnić, że są one zwrócone w tym samym
+                kierunku, co
+                pozostałe karty w ręku. Na przykład, jeśli gra akurat przebiega z użyciem jasnej strony, dodaj karty do
+                ręki
+                tak, aby były skierowane jasną stroną w Twoim kierunku.
+                <br>
+                Jeśli wylosowana karta pasuje do karty na stosie ROZGRYWKI, to gracz może nią zagrać w tej samej
+                kolejce. W
+                przeciwnym wypadku kolejka przechodzi na następną osobę.
+                <br>
+                Gracz może NIE zagrać kartą ze swojej puli, nawet jeżeli mógłby ją wyłożyć. W takiej sytuacji gracz musi
+                wziąć kartę ze stosu LOSOWANIA. Jeśli karta pasuje, to gracz może ją wyłożyć w tej samej kolejce, jednak
+                po
+                wylosowaniu nie może w tej kolejce zagrać inną kartą ze swojej puli.
+            </p>
+            <h1>FUNKCJE KART SPECJALNYCH</h1>
+            <span id="light-side"><b>JASNA STRONA (białe obramowanie)</b></span>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-+1-r.png" class="card" id="Plus1-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Weź jedną"</b> – jeżeli gracz położy tę kartę, to następny gracz musi wziąć jedną
+                        kartę ze
+                        stosu
+                        LOSOWANIA i traci swoją kolejkę. Kartę tę można wyłożyć jedynie na kartę o takim samym kolorze
+                        lub
+                        na inną kartę "Weź jedną". Jeśli karta ta zostanie odwrócona na początku rozgrywki, to działa w
+                        taki
+                        sam sposób, jak opisano powyżej.
+                    </p>
+                </div>
+                <script src="js\script-card-change-+1.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-light-direction-r.png" class="card" id="light-direction-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Zmiana kierunku"</b> - po wyłożeniu tej karty zmienia się kierunek gry (jeśli
+                        dotychczas
+                        gra
+                        przebiegała w lewą stronę, teraz będzie przebiegać w prawo i na odwrót). Kartę tę można wyłożyć
+                        jedynie na kartę o takim samym kolorze lub na inną kartę "Zmiana kierunku". Jeśli karta ta
+                        zostanie
+                        odwrócona na początku rozgrywki, to grę rozpoczyna osoba rozdająca, a następnie gra toczy się w
+                        prawo, a nie w lewo.
+                    </p>
+                </div>
+                <script src="js\script-card-change-flip-light-direction.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-stop-r.png" class="card" id="stop-light-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Postój"</b> - jeżeli gracz położy tę kartę, następny gracz traci kolejkę i ma
+                        "postój".
+                        Kartę tę
+                        można wyłożyć jedynie na kartę o takim samym kolorze lub na inną kartę "Postój". Jeśli karta
+                        "Postój" zostanie odwrócona na początku rozgrywki, to gracz znajdujący się na lewo od
+                        rozdającego
+                        zostaje pominięty, a grę rozpoczyna osoba znajdująca się na lewo od tego gracza.
+                    </p>
+                </div>
+                <script src="js\script-card-change-flip-stop.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-r.png" class="card" id="flip-light-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Odwróć"</b> - po wyłożeniu tej karty wszystkie karty zostają odwrócone z
+                        jasnej strony na ciemną. Po wyłożeniu karty Odwróć należy odwrócić stos ROZGRYWKI (ostatnia
+                        użyta
+                        karta będzie teraz na jego spodzie) i stos LOSOWANIA. Wszyscy gracze muszą również odwrócić
+                        karty
+                        trzymane w ręku. Rozgrywka będzie przebiegać z użyciem tej strony, dopóki któryś z graczy nie
+                        wyłoży
+                        kolejnej karty "Odwróć". Kartę tę można wyłożyć jedynie na kartę o takim samym kolorze lub na
+                        inną
+                        kartę "Odwróć".
+                    </p>
+                </div>
+                <script src="js\script-card-change-flip-light.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-pick-color.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Wybierz kolor"</b> - gracz, który wykłada tę kartę, ustala kolor, od
+                        którego będzie kontynuowana rozgrywka (dowolny kolor, także ten, który poprzedzał wyłożenie
+                        karty
+                        "Wybierz kolor"). Gracz może wyłożyć kartę "Wybierz kolor", nawet jeśli ma w swojej puli inną
+                        kartę,
+                        którą mógłby wyłożyć. Jeśli karta "Wybierz kolor" zostanie odwrócona na początku rozgrywki, to
+                        gracz
+                        znajdujący się na lewo od osoby rozdającej ustala kolor, od którego będzie kontynuowana
+                        rozgrywka.
+                    </p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-+2.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Wybierz kolor + weź dwie"</b> - karta ta pozwala wybrać kolor, od
+                        którego ma być kontynuowana rozgrywka, a PONADTO powoduje, że kolejny gracz musi wziąć dwie
+                        karty ze
+                        stosu LOSOWANIA i dodatkowo opuszcza kolejkę. Ale to nie wszystko! Gracz może wyłożyć tę kartę
+                        tylko
+                        wtedy, gdy NIE ma w swojej puli karty o takim samym KOLORZE co karta na stosie ROZGRYWKI (jednak
+                        gracz może wyłożyć tę kartę, jeśli ma pasujący numer lub kartę specjalną). Jeśli karta ta
+                        zostanie
+                        odwrócona na początku rozgrywki, to należy ją zwrócić do talii i wybrać inną kartę.
+                    </p>
+                </div>
+                <p>
+                    <i>
+                        UWAGA: Jeśli gracz przypuszcza, że jego poprzednik wyłożył kartę "Wybierz kolor + weź dwie"
+                        wbrew
+                        zasadom (tj. gracz, który ją wyłożył, ma w swojej puli kartę o pasującym kolorze), to może
+                        rzucić mu
+                        wyzwanie. Podejrzewany gracz musi pokazać swoje karty graczowi rzucającemu wyzwanie. Jeśli
+                        podejrzewany gracz jest winny, wówczas to on, a nie kolejny gracz, musi wylosować 2 karty.
+                        Jednak
+                        jeśli podejrzewany gracz jest niewinny, to gracz rzucający wyzwanie musi wylosować 2 karty PLUS
+                        2
+                        dodatkowe karty (razem 4 karty)!
+                    </i>
+                </p>
+            </div>
+            <span id="dark-side"><b>CIEMNA STRONA (czarne obramowanie)</b></span>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-+5-pink.png" class="card" id="Plus5-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Weź pięć"</b> - jeżeli gracz wyłoży tę kartę, następny gracz musi wziąć pięć kart ze
+                        stosu
+                        LOSOWANIA i traci kolejkę. Kartę tę można wyłożyć jedynie na kartę o takim
+                        +5 samym kolorze lub na inną kartę "Weź pięć".
+                    </p>
+                </div>
+                <script src="js\script-card-change-+5.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-direction-pink.png" class="card" id="dark-direction-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Zmiana kierunku"</b> - po wyłożeniu tej karty zmienia się kierunek gry
+                        (jeśli dotychczas gra przebiegała w lewą stronę, teraz będzie przebiegać w prawo i na odwrót).
+                        Kartę
+                        tę można wyłożyć jedynie na kartę o takim samym kolorze lub na inną kartę "Zmiana kierunku".
+                    </p>
+                </div>
+                <script src="js\script-card-change-flip-dark-direction.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-stop-all.png" class="card" id="stop-all-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Postój dla wszystkich graczy"</b> - jeżeli gracz położy tę kartę, wszyscy gracze tracą
+                        swoją kolejkę. Następnie rozgrywkę rozpoczyna gracz, który wyłożył tę kartę. Kartę tę można
+                        wyłożyć
+                        jedynie na kartę o takim samym kolorze lub na inną kartę "Postój dla wszystkich".
+                    </p>
+                </div>
+                <script src="js\script-card-change-flip-stop-all.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-pink.png" class="card" id="flip-dark-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Odwróć"</b> - jeżeli gracz położy tę kartę, wszystkie karty zostają odwrócone ze
+                        strony
+                        ciemnej na jasną. Po wyłożeniu karty "Odwróć" należy odwrócić stos ROZGRYWKI (ostatnia użyta
+                        karta
+                        będzie teraz na jego spodzie) i stos LOSOWANIA. Wszyscy gracze muszą również odwrócić karty
+                        trzymane
+                        w ręku. Rozgrywka będzie przebiegać z użyciem tej strony, dopóki któryś z graczy nie wyłoży
+                        kolejnej
+                        karty "Odwróć". Kartę tę można wyłożyć jedynie na kartę o takim samym kolorze lub na inną kartę
+                        "Odwróć".
+                    </p>
+                </div>
+                <script src="js\script-card-change-flip-dark.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-dark-pick-color.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Wybierz kolor"</b> - gracz, który wykłada tę kartę, ustala kolor, od którego
+                        będzie kontynuowana rozgrywka (dowolny kolor, także ten, który poprzedzał wyłożenie karty
+                        "Wybierz
+                        kolor"). Gracz może wyłożyć kartę "Wybierz kolor", nawet jeśli ma w swojej puli inną kartę,
+                        którą
+                        mógłby wyłożyć.
+                    </p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flip-dark-pick-cards.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Wybierz kolor + weź w tym kolorze"</b> - jeżeli gracz wyłoży tę kartę, następny gracz
+                        musi
+                        dobierać karty, dopóki nie wylosuje karty o pasującym kolorze (niezależnie od tego, ile kart
+                        będzie
+                        musiał dobrać) oraz traci swoją kolejkę. Ale to nie wszystko! Gracz może wyłożyć tę kartę tylko
+                        wtedy, gdy NIE ma w swojej puli karty o takim samym KOLORZE co karta na stosie ROZGRYWKI (jednak
+                        gracz może wyłożyć tę kartę, jeśli ma pasujący numer lub kartę specjalną).
+                    </p>
+                </div>
+                <p>
+                    <i>
+                        UWAGA: Jeśli gracz przypuszcza, że jego poprzednik wyłożył kartę "Wybierz kolor + weź w tym
+                        kolorze"
+                        wbrew zasadom (tj. gracz, który ją wyłożył, ma w swojej puli kartę o pasującym kolorze), może
+                        rzucić
+                        mu wyzwanie. Podejrzewany gracz musi pokazać swoje karty graczowi rzucającemu wyzwanie. Jeśli
+                        podejrzewany gracz jest winny, wówczas to on, a nie kolejny gracz, musi dobierać karty, dopóki
+                        nie
+                        wylosuje karty o pasującym kolorze. Jednak jeśli podejrzewany gracz jest niewinny, to gracz
+                        rzucający wyzwanie musi dobierać karty, dopóki nie wylosuje karty o pasującym kolorze PLUS wziąć
+                        2
+                        dodatkowe karty!
+                    </i>
+                </p>
+            </div>
+            <h1>KOŃCZENIE PARTII</h1>
+            <p>
+                Niezależnie od tego, czy gra gra przebiega z użyciem jasnej czy ciemnej strony, przed wyłożeniem
+                przedostatniej karty gracz musi krzyknąć "UNO" (co oznacza "jeden"), aby zasygnalizować, że została mu
+                tylko
+                jedna karta. Jeśli gracz nie krzyknie "UNO", a inny gracz przyłapie go na tym przed rozpoczęciem kolejki
+                następnej osoby, to przyłapany gracz musi wziąć dwie karty.
+                <br><br>
+                Kiedy jeden z graczy pozbędzie się wszystkich kart, runda się kończy. Po podliczeniu punktacji
+                (szczegóły w
+                rozdziale "OBLICZANIE PUNKTÓW") gra rozpoczyna się od nowa.
+                <br><br>
+                Jeśli ostatnią kartą wyłożoną w rundzie jest karta "Weź jedną”, "Weź pięć”, "Wybierz kolor + weź dwie"
+                lub
+                "Wybierz kolor + weź w tym kolorze", następny gracz musi odpowiednio wziąć jedną, pięć lub dwie karty
+                albo
+                dobierać karty do momentu wylosowania karty o pasującym kolorze. Karty te liczą się do łącznego wyniku.
+                <br><br>
+                Jeśli do czasu wyczerpania całego stosu LOSOWANIA żaden z graczy nie pozbył się wszystkich kart, to
+                należy
+                potasować stos ROZGRYWKI i gra toczy się dalej.
+            </p>
+            <h1>OBLICZANIE PUNKTÓW</h1>
+            <p>
+                Gracz, który jako pierwszy w danej rundzie pozbędzie się kart, uzyskuje punkty za wszystkie karty, które
+                zostały w rękach jego przeciwników. Punkty oblicza się następująco:<br>
+                Wszystkie karty z numerami (1-9) = liczba punktów zgodna z cyfrą na karcie<br>
+                "Weź jedną" = 10 punktów<br>
+                "Weź pięć" = 20 punktów<br>
+                "Zmiana kierunku" = 20 punktów<br>
+                "Postój" = 20 punktów<br>
+                "Postój dla wszystkich" = 30 punktów<br>
+                "Odwróć" = 20 punktów<br>
+                "Wybierz kolor" = 40 punktów<br>
+                "Wybierz kolor + weź dwie" = 50 punktów<br>
+                "Wybierz kolor + weź w tym kolorze" = 60 punktów
+                <br><br>
+                Jeśli po zsumowaniu punktów w danej rundzie żaden z graczy nie uzyskał 500 punktów, należy potasować
+                karty i
+                rozpocząć nową rundę.
+            </p>
+            <h1>ZWYCIĘZCA</h1>
+            <p>
+                ZWYCIĘŻA gracz, który jako pierwszy zdobędzie 500 punktów.
+            </p>
+            <h1>ALTERNATYWNY SPOSÓB OBLICZANIA PUNKTÓW</h1>
+            <p>
+                Istnieje także inny sposób obliczania punktów, tj. poprzez naliczanie każdemu graczowi punktów za karty,
+                które zostały mu w ręku na końcu każdej partii. Zwycięża gracz, który ma najmniej punktów w momencie,
+                gdy
+                jeden z graczy osiąga 500 punktów.
+            </p>
+            <h1>FAQ</h1>
+            <p>
+                <i>Tutaj pojawią się odpowiedzi na najczęściej zadawane pytania.</i>
             </p>
         </div>
-        <span id="dark-side"><b>CIEMNA STRONA (czarne obramowanie)</b></span>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-+5-pink.png" class="card" id="Plus5-card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Weź pięć"</b> - jeżeli gracz wyłoży tę kartę, następny gracz musi wziąć pięć kart ze stosu
-                    LOSOWANIA i traci kolejkę. Kartę tę można wyłożyć jedynie na kartę o takim
-                    +5 samym kolorze lub na inną kartę "Weź pięć".
-                </p>
-            </div>
-            <script src="js\script-card-change-+5.js"></script>
-        </div>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-direction-pink.png" class="card" id="dark-direction-card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Zmiana kierunku"</b> - po wyłożeniu tej karty zmienia się kierunek gry
-                    (jeśli dotychczas gra przebiegała w lewą stronę, teraz będzie przebiegać w prawo i na odwrót). Kartę
-                    tę można wyłożyć jedynie na kartę o takim samym kolorze lub na inną kartę "Zmiana kierunku".
-                </p>
-            </div>
-            <script src="js\script-card-change-flip-dark-direction.js"></script>
-        </div>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-stop-all.png" class="card" id="stop-all-card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Postój dla wszystkich graczy"</b> - jeżeli gracz położy tę kartę, wszyscy gracze tracą
-                    swoją kolejkę. Następnie rozgrywkę rozpoczyna gracz, który wyłożył tę kartę. Kartę tę można wyłożyć
-                    jedynie na kartę o takim samym kolorze lub na inną kartę "Postój dla wszystkich".
-                </p>
-            </div>
-            <script src="js\script-card-change-flip-stop-all.js"></script>
-        </div>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-pink.png" class="card" id="flip-dark-card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Odwróć"</b> - jeżeli gracz położy tę kartę, wszystkie karty zostają odwrócone ze strony
-                    ciemnej na jasną. Po wyłożeniu karty "Odwróć" należy odwrócić stos ROZGRYWKI (ostatnia użyta karta
-                    będzie teraz na jego spodzie) i stos LOSOWANIA. Wszyscy gracze muszą również odwrócić karty trzymane
-                    w ręku. Rozgrywka będzie przebiegać z użyciem tej strony, dopóki któryś z graczy nie wyłoży kolejnej
-                    karty "Odwróć". Kartę tę można wyłożyć jedynie na kartę o takim samym kolorze lub na inną kartę
-                    "Odwróć".
-                </p>
-            </div>
-            <script src="js\script-card-change-flip-dark.js"></script>
-        </div>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-dark-pick-color.png" class="card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Wybierz kolor"</b> - gracz, który wykłada tę kartę, ustala kolor, od którego
-                    będzie kontynuowana rozgrywka (dowolny kolor, także ten, który poprzedzał wyłożenie karty "Wybierz
-                    kolor"). Gracz może wyłożyć kartę "Wybierz kolor", nawet jeśli ma w swojej puli inną kartę, którą
-                    mógłby wyłożyć.
-                </p>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card-view">
-                <img src="cards\uno-card-flip-dark-pick-cards.png" class="card">
-            </div>
-            <div class="card-description">
-                <p>
-                    <b>Karta "Wybierz kolor + weź w tym kolorze"</b> - jeżeli gracz wyłoży tę kartę, następny gracz musi
-                    dobierać karty, dopóki nie wylosuje karty o pasującym kolorze (niezależnie od tego, ile kart będzie
-                    musiał dobrać) oraz traci swoją kolejkę. Ale to nie wszystko! Gracz może wyłożyć tę kartę tylko
-                    wtedy, gdy NIE ma w swojej puli karty o takim samym KOLORZE co karta na stosie ROZGRYWKI (jednak
-                    gracz może wyłożyć tę kartę, jeśli ma pasujący numer lub kartę specjalną).
-                </p>
-            </div>
-            <p>
-                <i>
-                    UWAGA: Jeśli gracz przypuszcza, że jego poprzednik wyłożył kartę "Wybierz kolor + weź w tym kolorze"
-                    wbrew zasadom (tj. gracz, który ją wyłożył, ma w swojej puli kartę o pasującym kolorze), może rzucić
-                    mu wyzwanie. Podejrzewany gracz musi pokazać swoje karty graczowi rzucającemu wyzwanie. Jeśli
-                    podejrzewany gracz jest winny, wówczas to on, a nie kolejny gracz, musi dobierać karty, dopóki nie
-                    wylosuje karty o pasującym kolorze. Jednak jeśli podejrzewany gracz jest niewinny, to gracz
-                    rzucający wyzwanie musi dobierać karty, dopóki nie wylosuje karty o pasującym kolorze PLUS wziąć 2
-                    dodatkowe karty!
-                </i>
-            </p>
-        </div>
-        <h1>KOŃCZENIE PARTII</h1>
-        <p>
-            Niezależnie od tego, czy gra gra przebiega z użyciem jasnej czy ciemnej strony, przed wyłożeniem
-            przedostatniej karty gracz musi krzyknąć "UNO" (co oznacza "jeden"), aby zasygnalizować, że została mu tylko
-            jedna karta. Jeśli gracz nie krzyknie "UNO", a inny gracz przyłapie go na tym przed rozpoczęciem kolejki
-            następnej osoby, to przyłapany gracz musi wziąć dwie karty.
+        <!--! FOOTER -->
+        <div id="footer">
             <br><br>
-            Kiedy jeden z graczy pozbędzie się wszystkich kart, runda się kończy. Po podliczeniu punktacji (szczegóły w
-            rozdziale "OBLICZANIE PUNKTÓW") gra rozpoczyna się od nowa.
-            <br><br>
-            Jeśli ostatnią kartą wyłożoną w rundzie jest karta "Weź jedną”, "Weź pięć”, "Wybierz kolor + weź dwie" lub
-            "Wybierz kolor + weź w tym kolorze", następny gracz musi odpowiednio wziąć jedną, pięć lub dwie karty albo
-            dobierać karty do momentu wylosowania karty o pasującym kolorze. Karty te liczą się do łącznego wyniku.
-            <br><br>
-            Jeśli do czasu wyczerpania całego stosu LOSOWANIA żaden z graczy nie pozbył się wszystkich kart, to należy
-            potasować stos ROZGRYWKI i gra toczy się dalej.
-        </p>
-        <h1>OBLICZANIE PUNKTÓW</h1>
-        <p>
-            Gracz, który jako pierwszy w danej rundzie pozbędzie się kart, uzyskuje punkty za wszystkie karty, które
-            zostały w rękach jego przeciwników. Punkty oblicza się następująco:<br>
-            Wszystkie karty z numerami (1-9) = liczba punktów zgodna z cyfrą na karcie<br>
-            "Weź jedną" = 10 punktów<br>
-            "Weź pięć" = 20 punktów<br>
-            "Zmiana kierunku" = 20 punktów<br>
-            "Postój" = 20 punktów<br>
-            "Postój dla wszystkich" = 30 punktów<br>
-            "Odwróć" = 20 punktów<br>
-            "Wybierz kolor" = 40 punktów<br>
-            "Wybierz kolor + weź dwie" = 50 punktów<br>
-            "Wybierz kolor + weź w tym kolorze" = 60 punktów
-            <br><br>
-            Jeśli po zsumowaniu punktów w danej rundzie żaden z graczy nie uzyskał 500 punktów, należy potasować karty i
-            rozpocząć nową rundę.
-        </p>
-        <h1>ZWYCIĘZCA</h1>
-        <p>
-            ZWYCIĘŻA gracz, który jako pierwszy zdobędzie 500 punktów.
-        </p>
-        <h1>ALTERNATYWNY SPOSÓB OBLICZANIA PUNKTÓW</h1>
-        <p>
-            Istnieje także inny sposób obliczania punktów, tj. poprzez naliczanie każdemu graczowi punktów za karty,
-            które zostały mu w ręku na końcu każdej partii. Zwycięża gracz, który ma najmniej punktów w momencie, gdy
-            jeden z graczy osiąga 500 punktów.
-        </p>
-        <h1>FAQ</h1>
-        <p>
-
-        </p>
-        <script src="js\script-card-3d-rotation.js"></script>
-    </div>
-    <div id="footer">
-        <br><br>
-        <p>&copy; 2023 IVDamianVI</p>
-        <br>
-    </div>
+            <p>&copy; 2023 IVDamianVI</p>
+            <br>
+            <script src="js\script-card-3d-rotation.js"></script>
+        </div>
+    </main>
 </body>
 
 </html>

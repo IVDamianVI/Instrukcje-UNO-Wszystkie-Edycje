@@ -1,0 +1,62 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    position: relative;
+    animation: spin 1s linear infinite;
+}
+
+.uno-card {
+    width: 160px;
+    height: 240px;
+    background-image: url("../cards/uno-back.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    scale: 0.5;
+}
+
+.loaded body {
+    overflow: auto;
+}
+
+body:not(.loaded) .loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d1f;
+    z-index: 9999;
+}
+
+body.loaded .loader-wrapper {
+    display: none;
+}
+
+body.loaded main {
+    display: block;
+}
+
+main {
+    background-color: #28282B;
+    display: none;
+}
+
+/** ANIMACJE */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

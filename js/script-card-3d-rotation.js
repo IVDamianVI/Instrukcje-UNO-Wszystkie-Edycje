@@ -1,4 +1,5 @@
 const cards = document.querySelectorAll(".card");
+const boxes = document.querySelectorAll(".box");
 const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
 const THRESHOLD = 12;
 
@@ -10,7 +11,6 @@ function handleHover(e) {
   const offsetX = clientX - rect.left;
   const offsetY = clientY - rect.top;
   const horizontal = (offsetX / clientWidth) * 2;
-  // const vertical = (offsetY / currentTarget.offsetHeight) * 2;
   const vertical = (offsetY / window.innerHeight) * 2;
   const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
   const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
@@ -26,5 +26,9 @@ if (!motionMatchMedia.matches) {
   cards.forEach((card) => {
     card.addEventListener("mousemove", handleHover);
     card.addEventListener("mouseleave", resetStyles);
+  });
+  boxes.forEach((box) => {
+    box.addEventListener("mousemove", handleHover);
+    box.addEventListener("mouseleave", resetStyles);
   });
 }

@@ -1,0 +1,152 @@
+color-palette {
+    color: #28282B;
+    color: #DB162F;
+    color: #FFFCF9;
+    color: #2292A4;
+    color: #08B2E3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #28282B;
+    color: #FFFCF9;
+    font-family: 'Cabin', sans-serif;
+}
+
+iframe {
+    width: 100%;
+    height: 11%;
+    position: fixed;
+}
+
+#main {
+    background-color: #28282B;
+    font-size: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 100vh;
+}
+
+#footer {
+    background-color: #28282B;
+    font-size: 15px;
+    text-align: center;
+    height: 100px;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: #FFFCF9;
+}
+
+.left-side-page {
+    float: left;
+    width: 38vh;
+    min-height: 30vh;
+}
+
+.left-side-page img {
+    height: 350px;
+}
+
+h1,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    margin-left: 25px;
+}
+
+h1 {
+    transition: font-size 0.5s ease;
+    margin-top: 30px;
+    color: #f0dc44;
+    text-shadow: 2px 2px 0px #000000, 4px 4px 0px rgba(0, 0, 0, 0.201);
+    -webkit-text-stroke-width: 1px black;
+}
+
+h1:hover {
+    transition: font-size 0.5s ease;
+    /* font-size: 31px; */
+}
+
+#dark-side {
+    transition: font-size 0.5s ease;
+    margin-top: 30px;
+    color: #ffa1a1;
+    text-shadow: 2px 2px 0px #000000, 4px 4px 0px rgba(0, 0, 0, 0.201);
+    -webkit-text-stroke-width: 1px black;
+}
+
+#light-side {
+    transition: font-size 0.5s ease;
+    margin-top: 30px;
+    color: #a1dbff;
+    text-shadow: 2px 2px 0px #000000, 4px 4px 0px rgba(0, 0, 0, 0.201);
+    -webkit-text-stroke-width: 1px black;
+}
+
+.progress-container {
+    top: 42px;
+    width: 100%;
+    height: 8px;
+    background: #00000000;
+    position: fixed;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #f0dc44be;
+    width: 0%;
+    border-radius: 10px;
+}
+
+.red-text {
+    color: #cd342e;
+}
+
+.green-text {
+    color: #8fbc3a;
+}
+
+.blue-text {
+    color: #367dc0;
+}
+
+.yellow-text {
+    color: #efd13d;
+}
+
+.pink-text {
+    color: #c41f6c;
+}
+
+.purple-text {
+    color: #7d317c;
+}
+
+.cyan-text {
+    color: #039388;
+}
+
+.orange-text {
+    color: #ef963c;
+}

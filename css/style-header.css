@@ -1,0 +1,52 @@
+color-palette {
+    color: #28282B;
+    color: #DB162F;
+    color: #FFFCF9;
+    color: #2292A4;
+    color: #08B2E3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #28282B;
+    color: #FFFCF9;
+    font-family: 'Cabin', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#header {
+    background: linear-gradient(#28282B 50%, #28282bab 85%, #28282b0c);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 50px;
+}
+
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header li {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.5s ease;
+}
+
+#header li:hover {
+    transform: scale(1.2) rotate(16deg) matrix(1.2, -0.1, 0, 1.2, 0, 0);
+    transition: transform 0.5s ease;
+}
+
+#header img {
+    height: auto;
+    width: 80px;
+}
