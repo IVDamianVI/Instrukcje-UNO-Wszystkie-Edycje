@@ -18,6 +18,13 @@
     float: left;
     margin-right: 20px;
     height: 150px;
+    text-align: center;
+    flex-direction: column; /* Dodana właściwość */
+    align-items: center; /* Dodana właściwość */
+}
+
+.card-view {
+    margin-top: 10px;
 }
 
 .card-container {
@@ -25,10 +32,20 @@
     margin-top: 10px;
 }
 
-.card-description {
+.card-description{
+    height: 150px;
+}
+
+.card-description, .card-caption {
     margin-left: 20px;
     display: table-cell;
     vertical-align: middle;
-    height: 150px;
+}
 
+.card-caption, .card-caption p {
+    text-align: center;
+}
+
+.card-caption {
+    padding-right: 100px;
 }

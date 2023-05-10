@@ -1,0 +1,42 @@
+.table-container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.table-caption {
+    margin-left: 20px;
+    display: table-cell;
+}
+
+.table-caption {
+    padding-right: 50px;
+}
+
+table {
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #FFFCF9;
+}
+
+th {
+    font-weight: bold;
+    padding: 10px;
+    color:#28282B;
+}
+
+td {
+    border-radius: 20px;
+    border: 2px solid black;
+    text-align: justify;
+    padding: 10px;
+    background-color: #28282B;
+}
+
+table li {
+    text-align: justify;
+}
+
+#caption{
+    height: 210px;
+}

@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="css\style-header.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+  <link rel="stylesheet" href="css\style-header.css" />
+  <link rel="stylesheet" href="css\style-light-mode.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin" />
 
   <title>Header</title>
 </head>
@@ -15,12 +16,21 @@
 <body>
   <div id="header">
     <ul>
-      <li><a href="uno.html" target="_parent"><img alt="UNO" src="logo\uno-logo.png"></a></li>
-      <li><a href="uno-all-wild.html" target="_parent"><img alt="UNO ALL WILD!" src="logo\uno-logo-all-wild.png"></a>
+      <li class="logo"><a href="uno.html" target="_parent"><img alt="UNO" src="logo\uno-logo.png"></a></li>
+      <li class="logo"><a href="uno-all-wild.html" target="_parent"><img alt="UNO ALL WILD!" src="logo\uno-logo-all-wild.png"></a>
       </li>
-      <li><a href="uno-flip.html" target="_parent"><img alt="UNO FLIP!" src="logo\uno-logo-flip.png"></a></li>
-      <li><a href="uno-flex.html" target="_parent"><img alt="UNO FLEX!" src="logo\uno-logo-flex.png"></a></li>
-      <li><a href="dos.html" target="_parent"><img alt="DOS" src="logo\dos-logo.png"></a></li>
+      <li class="logo"><a href="uno-flip.html" target="_parent"><img alt="UNO FLIP!" src="logo\uno-logo-flip.png"></a></li>
+      <li class="logo"><a href="uno-flex.html" target="_parent"><img alt="UNO FLEX!" src="logo\uno-logo-flex.png"></a></li>
+      <li class="logo"><a href="dos.html" target="_parent"><img alt="DOS" src="logo\dos-logo.png"></a></li>
+      <!--! Work in progress: Light Mode Switch  -->
+      <!-- <li id="switch">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </li> -->
     </ul>
   </div>
 </body>

@@ -16,7 +16,6 @@ body {
 }
 
 #header {
-    background: linear-gradient(#28282B 50%, #28282bab 85%, #28282b0c);
     position: fixed;
     top: 0;
     left: 0;
@@ -27,6 +26,11 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     height: 50px;
+
+    /*! Ver.1 */
+    background: linear-gradient(#28282B 50%, #28282bab 85%, #28282b0c);
+    /*! Ver.2 */
+    /* background: #28282B; */
 }
 
 #header ul {
@@ -41,7 +45,7 @@ body {
     transition: transform 0.5s ease;
 }
 
-#header li:hover {
+.logo:hover {
     transform: scale(1.2) rotate(16deg) matrix(1.2, -0.1, 0, 1.2, 0, 0);
     transition: transform 0.5s ease;
 }

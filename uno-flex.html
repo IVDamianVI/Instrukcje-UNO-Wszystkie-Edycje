@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\style-progress.css" />
+    <link rel="stylesheet" href="css\style-text-color.css" />
+    <link rel="stylesheet" href="css\style-loader-uno.css" />
+    <link rel="stylesheet" href="css\style-card.css" />
+    <link rel="stylesheet" href="css\style-scrollbar.css" />
+    <link rel="stylesheet" href="css\style-table.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="icon" href="logo\uno-logo-flex.png" />
+
+    <title>UNO FLEX!</title>
+</head>
+
+<body>
+    <!--! LOADING SCREEN -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="uno-card-flex"></div>
+        </div>
+    </div>
+    <script src="js\script-loader.js"></script>
+    <!--! PAGE -->
+    <main class="animate__animated animate__fadeIn">
+        <!--! PROGRESS BAR -->
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <script src="js\script-progress.js"></script>
+        <!--! HEADER -->
+        <iframe src="header.html" frameborder="0"></iframe>
+        <!--! CONTENT -->
+        <div id="main">
+            <br /><br /><br /><br /><br /><br />
+            <div class="card-description">
+                <div class="left-side-page">
+                    <img src="logo\uno-box-flex.png" class="box">
+                </div>
+                <div class="card-description">
+                    <h1>Zawartość</h1>
+                    <p><b>
+                            112 kart - w tym 8 kart "Akcji" (szczegółowe informacje znajdziesz w sekcji Karty "Akcji")
+                        </b></p>
+                </div>
+            </div>
+            <h1>Cel gry</h1>
+            <p>
+                Jako pierwszy gracz pozbądź się wszystkich kart z ręki.
+            </p>
+            <h1>UNO FLEX W SKRÓCIE</h1>
+            <p>
+                W UNO Flex są trzy rodzaje kart:
+            </p>
+            <div class="card-container">
+                <div class="card-caption">
+                    <img src="cards\uno-card-flip-+1-r.png" class="card">
+                    <br />
+                    <p><b>KLASYCZNE</b></p>
+                </div>
+                <div class="card-caption">
+                    <img src="cards\uno-card-flip-+1-r.png" class="card">
+                    <br />
+                    <p><b>ZMIANY</b></p>
+                </div>
+                <div class="card-caption">
+                    <img src="cards\uno-card-flex-green.png" class="card">
+                    <img src="cards\uno-card-flex-red.png" class="card">
+                    <br />
+                    <div class="caption">
+                        <p><b>AKCJI</b></p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Tak jak w klasycznej grze UNO rozgrywka polega na dopasowaniu koloru, cyfry lub symbolu.
+                Ta gra zawiera jednak karty "Zmiany", które mają w przeciwległym rogu element wskazujący
+                możliwość zmiany koloru karty, co może pomóc je dopasować. Dostępne są też Karty specjalne
+                "Zmiany" oraz dzikie karty (więcej na ten temat później). Tak jak w klasycznej wersji - gdy
+                graczowi pozostanie tylko jedna karta, musi zawołać "UNO!".
+            </p>
+            <h1>Przygotowanie</h1>
+            <ol>
+                <li>
+                    Oddziel 8 kart "Akcji" od reszty talii.
+                </li>
+                <li>
+                    Rozdaj graczom po jednej karcie "Akcji".
+                </li>
+                <li>
+                    Gracze zaczyają z kartami "Akcji" na zielonej stronie "<b>✔</b>".
+                </li>
+                <li>
+                    Wybierz osobę rozdającą i potasuj pozostałe karty.
+                </li>
+                <li>
+                    Każdy gracz powinien dostać 7 kart.
+                </li>
+                <li>
+                    Ułóżcie pozostałe karty <b>ZAKRYTE</b> na środku stołu. Utworzą one stos <b>LOSOWANIA</b>.
+                </li>
+                <li>
+                    Odkryjcie górną kartę ze stosu <b>LOSOWANIA</b> i połóżcie ją obok <b>ODKRYTĄ</b> na stole, aby
+                    utworzyć
+                    stos <b>ROZGRYWKI</b>. <br />Jeśli jest to karta specjalna, pomińcie ją i odwróćcie następną kartę.
+                </li>
+                <li>
+                    Grę rozpoczyna osoba po lewej od rozdającego, a rozgrywka toczy suię zgodnie z ruchem
+                    wskazówek zegara.
+                </li>
+            </ol>
+            <div class="card-description">
+                <p>
+                    Niektóre karty klasyczne mają ikonę "Odwróć".
+                    <br />
+                    Więcej na ten temat dowiesz się z sekcji "Karta
+                    Akcji".
+                </p>
+            </div>
+            <div class="card-caption">
+                <img src="cards\uno-card-info.png" style="width: 200px; padding-left: 50px;">
+            </div>
+            <h1>Zagrajmy w UNO Flex!</h1>
+            <p>
+                Gracz próbuje jak najszybciej pozbyć się wszystkich swoich kart. Podczas swojej kolejki wykłada
+                <b>JEDNĄ KARTĘ</b> na stos <b>ROZGRYWKI</b>.
+            </p>
+            <div class="table-container">
+                <div class="table-caption">
+                    <table>
+                        <tr>
+                            <th>
+                                Jeśli MA pasującą kartę w ręku, może wyłożyć ją
+                                <br />
+                                na stos ROZGRYWKI.
+                            </th>
+                        </tr>
+                        <tr id="caption">
+                            <td>
+                                <ol>
+                                    <li>
+                                        Kartę można wyłożyć tylko wtedy, gdy
+                                        <br />
+                                        odpowiada ona co najmniej jednemu
+                                        <br />
+                                        elementowi karty na górze stosu ROZGRYWKI,
+                                        <br />
+                                        takiemu jak kolor, cyfra lub symbol.
+                                    </li>
+                                    <li>
+                                        Jeśli wyłożona karta jest kartą specjalną,
+                                        <br />
+                                        ma ona wyjątkową funkcję.
+                                        <br />
+                                        <i>(Szczegóły w sekcji Karty specjalne.)</i>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-caption">
+                    <table>
+                        <tr>
+                            <th>
+                                Jeśli gracz NIE MA pasującej karty, musi DOBRAĆ
+                                <br />
+                                JEDNĄ KARTĘ ze stosu LOSOWANIA.
+                            </th>
+                        </tr>
+                        <tr id="caption">
+                            <td>
+                                <ol>
+                                    <li>
+                                        Jeżeli jego <b>nowa</b> karta może zostać
+                                        <br />
+                                        wyłożona (sprawdź informacje powyżej)
+                                        <br />
+                                        może nią teraz zagrać.
+                                    </li>
+                                    <li>
+                                        Gracz może zawsze dobrać zmiast
+                                        <br />
+                                        wyłożyć kartę, nawet jeśli ma w swojej
+                                        <br />
+                                        puli pasującą kartę, którą mógłby wyłożyć.
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p style="text-align: center;">
+                Po wyłożeniu lub dobraniu karty przez gracza kolejka przechodzi na następną osobę.
+            </p>
+            <p><i>
+                    <b>UWAGA:</b> jeśli na stosie LOSOWANIA nie ma żadnych kart, trzeba przetasować stos ROZGRYWKI,
+                    <br />
+                    aby utworzyć nowy stos LOSOWANIA.
+                </i></p>
+            <h1>Zawołaj: "UNO!"</h1>
+            <p>
+                W momencie gdy gracz zostaje z tylko jedną kartą w ręku, musi krzyknąć "UNO",
+                <br />
+                aby dać znać innym graczom, że szykuje się do wygranej.
+                <br />
+                Jeśli jednak ktoś go przyłapie i pierwszy zawoła "UNO" (ale przed rozpoczęciem kolejki
+                <br />
+                następnego gracza), gracz z jedną kartą musi dobrać 2 dodatkowe karty.
+            </p>
+            <h1>Karty "Zmiany"</h1>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-flex-info.png" width="150px">
+                </div>
+                <div class="card-description">
+                    <p>
+                        Każda karta Zmiany" ma element "przeważający", a w przeciwległym rogu odwrócony element zmiany".
+                        W rozgrywce gra się elementem "przeważającym", ale gracz może też użyć elementu zmieniającego.
+                        Na przykład karta na górze stosu ROZGRYWKI jest zielona, ale gracz nie ma zielonych kart do
+                        dopasowania. Ma za to kartę "Zmiany" z żółtym elementem "przeważającym" i zielonym elementem
+                        "zmiany" w przeciwległym rogu. Może więc użyć karty jako pasującej do koloru zielonego.
+                        Następny gracz w kolejce musi jednak dopasować kartę do ŻÓŁTEGO elementu "przeważającego",
+                        a nie zielonego elementu "zmiany".
+                    </p>
+                    <p>
+                        Są też Karty specjalne "Zmiany" - szczegóły w sekcji "Karta specjalna".
+                    </p>
+                </div>
+                <script src="js\script-card-change-+1.js"></script>
+            </div>
+            <h1>Karta "Akcji"</h1>
+            <p>
+                Karta "Akcji" określa, czy można użyć "zmieniającej" strony karty. Jeśli karta "Akcji" leży zieloną
+                stroną "✔" do góry, gracz może użyć elementu zmieniającego. Jeśli karta "Akcji" leży czerwoną
+                stroną "✗" do góry, gracz nie ma takiej możliwości.
+                <br />
+                Po użyciu karty "Akcji" w celu zagrania elementem "zmiany" należy obrócić ją zieloną stroną "✔"
+                do dołu, a czerwoną "✗" do góry. Karta musi leżeć czerwoną stroną "✗" do góry do momentu, gdy:
+                <br />
+            <ul>
+                <li>
+                    Wszyscy gracze jednocześnie mają kartę "Akcji" odwróconą czerwoną stroną "✗" do góry.
+                    <br />
+                    Odwracają wtedy swoje karty zieloną stroną "✔" do góry.
+                </li>
+                <li>
+                    Dany gracz zagra kartą z cyfrą, na której znajduje się ikona "Odwróć".
+                </li>
+                <li>
+                    Któryś z graczy zagra dziką kartą "Odwróć wszystkie" (szczegóły w sekcji "dzika karta").
+                </li>
+            </ul>
+            </p>
+            <table>
+                <tr>
+                    <th>
+                        Jeśli gracz zagra kartą z cyfrą, na której znajduje się ikona "Odwróć", gracz
+                        <br />
+                        MUSI odwrócić kartę „Akcji”. Jeśli ta karta leży zieloną stroną"✔" do góry,
+                        <br />
+                        należy obrócić ją na czerwoną stronę "✗" - i odwrotnie.
+                    </th>
+                </tr>
+            </table>
+            <h1>Karty specjalne</h1>
+            <p>
+                Karty specjalne można wykładać na inne karty specjalne w tym samym kolorze.
+            </p>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-+2-flex-r.png" class="card" id="plus2-flex">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Weź dwie"</b> - Następny gracz musi wziąć dwie karty ze stosu
+                        LOSOWANIA i traci swoją kolejkę.
+                    </p>
+                </div>
+                <script src="js\script-card-change-+2-flex.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-direction-flex-r.png" class="card" id="direction-flex">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Zmiana kierunku"</b> - Zmienia się kierunek gry.
+                        Jeśli rozgrywka toczyła się zgodnie z ruchem wskazówek zegara,
+                        teraz będzie kontynuowana w kierunku przeciwnym (i vice versa).
+                    </p>
+                </div>
+                <script src="js\script-card-change-flex-direction.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-stop-flex-r.png" class="card" id="stop-flex-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Postój"</b> - Następny gracz traci swoją kolejkę.
+                    </p>
+                </div>
+                <script src="js\script-card-change-flex-stop.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flex-flip.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Dzika karta "Odwróć wszystkie"</b> - Wszyscy gracze muszą odwrócić swoje karty "Akcji".
+                        Ta karta pełni też funkcję dzikiej karty, więc gracz, który ją wyłożył, wskazuje kolor,
+                        od którego ma być kontynuowana gra.
+                    </p>
+                </div>
+            </div>
+            <h1>KARTY SPECJALNE "ZMIANY"</h1>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flex-+2-r.png" class="card" id="dwa-flex-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta Zmiany "Weź dwie":</b>
+                        <br />
+                        <u>Standardowa zasada</u> - Działa jak tradycyjna karta "Weź dwie".
+                        Reguła zmieniona wszystkich innych graczy do wzięcia jednej karty,
+                        a następny gracz nie traci kolejki.
+                        <br /><br />
+                        <u>Reguła zmieniona</u> - Zmusza wszystkich innych graczy do wzięcia jednej karty,
+                        a następny gracz nie traci kolejki.
+                    </p>
+                </div>
+                <script src="js\script-card-change-+2-flex-flex.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flex-direction-r.png" class="card" id="flex-direction-flex">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta Zmiany "Zmiana kierunku":</b>
+                        <br />
+                        <u>Standardowa zasada</u> - Działa jak tradycyjna karta "Zmiana kierunku".
+                        <br /><br />
+                        <u>Reguła zmieniona</u> - Działa jak karta <b>ZMIANA KIERUNKU</b> i <b>POSTÓJ</b>,
+                        więc gra jest kontynuowana w drugą stronę, a pierwszy gracz od tej strony traci kolejkę.
+                    </p>
+                </div>
+                <script src="js\script-card-change-flex-direction-flex.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flex-stop-r.png" class="card" id="flex-stop-flex">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta Zmiany "Postój":</b>
+                        <br />
+                        <u>Standardowa zasada</u> - Działa jak tradycyjna karta "Zmiana kierunku".
+                        <br /><br />
+                        <u>Reguła zmieniona</u> - "Zamiana" oznacza <b>POSTÓJ DLA WSZYSTKICH GRACZY</b>.
+                        Kolejka wraca do gracza, który zagrał tą kartą.
+                    </p>
+                </div>
+                <script src="js\script-card-change-flex-stop-flex.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flex-+2.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Dzika karta Zmiany "Ty weź dwie":</b>
+                        <br />
+                        <u>Standardowa zasada</u> - Działa jak tradycyjna dzika karta.
+                        <br /><br />
+                        <u>Reguła zmieniona</u> - Działa jak karta "Ty weź dwie" pozwlająca wybrać gracza,
+                        który ma wziąć dwie karty. Gra toczy się dalej i kolejka przechodzi na następną osobę.
+                        Ta karta pełni też funkcję dzikiej karty, więc gracz, który ją wyłożył, wskazuje kolor,
+                        od którego ma być kontynuowana rozgrywka.
+                    </p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flex-pick-color-all.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Dzika karta Zmiany "Wszyscy biorą karty":</b>
+                        <br />
+                        <u>Standardowa zasada</u> - Działa jak tradycyjna dzika karta.
+                        <br /><br />
+                        <u>Reguła zmieniona</u> - Zmusza wszystkich innych graczy do wzięcia 2 kart.
+                        Następny gracz nie traci kolejki.
+                    </p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-flex-+4.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Dzika karta Zmiany "Weź cztery":</b>
+                        <br />
+                        <u>Standardowa zasada</u> - -Ta karta pasuje do każdej innej,
+                        więc można ją wyłożyć bez względu na to, jaka karta znajduje się na stosie ROZGRYWKI.
+                        Jednak gracz może wyłożyć tę kartę tylko wtedy, gdy
+                        <b>NIE MA W SWOJEJ PULI KARTY O TAKIM SAMYM KOLORZE CO KARTA NA STOSIE ROZGRYWKI</b>.
+                        <br />
+                        Następny gracz w kolejności ma 2 opcje: dobiera 4 karty i traci kolejkę LUB rzuca wyzwanie.
+                    </p>
+                    <br />
+                    <li>
+                        Jeśli gracz, któremu rzucono wyzwanie, <b>NIE MA</b> karty w pasującym kolorze:
+                        osoba rzucająca wyzwanie musi dobrać 6 zamiast 4 kart i traci kolejkę.
+                    </li>
+                    <li>
+                        Jeśli gracz, któremu rzucono wyzwanie, MA kartę w pasującym kolorze:
+                        to on MUSI dobrać 4 karty, a gracz rzucający wyzwanie nie dobiera żadnej.
+                    </li>
+                    <br />
+                    <p>
+                        Ta karta jest także kartą "Wybierz kolor", więc gracz, który ją wyłożył, wybiera kolor,
+                        od którego będzie kontynuowana rozgrywka (niezależnie od wyniku wyzwania).
+                        Jeśli drugi gracz wybierze wyzwanie, gracz, który wyłożył tę kartę,
+                        musi pokazać mu swoje karty w ręce, aby ujawnić, czy ma kartę pasującą do koloru na stosie
+                        ROZGRYWKI czy nie - uwaga, dzikie karty również liczą się jako pasujące.
+                        <br /><br />
+                        <u>Reguła zmieniona</u> - Działa jak karta "Ty weź cztery" pozwalająca wybrać gracza,
+                        który ma wziąć cztery karty. Gra toczy się dalej i kolejka przechodzi na następną osobę.
+                        Ta karta pełni też funkcję dzikiej karty, więc gracz, który wyłożył tę kartę, wskazuje kolor,
+                        od którego ma być kontynuowana gra.
+                    </p>
+                </div>
+            </div>
+            <h1>Liczenie punktów (opcjonalny sposób na ustalenie wygranej)</h1>
+            <p>
+                Gdy gracz wygra rozdanie, otrzymuje punkty na podstawie kart pozostałych w rękach jego przeciwników.
+                <br />
+                Karty mają następującą punktację:
+            </p>
+            <br />
+            <li>
+                Wszystkie karty z cyfrą (1-8) = liczba punktów zgodna z cyfrą na karcie
+            </li>
+            <li>
+                Dowolna karta specjalna = 20 punktów<br />
+                <i>- Karta Postój, Karta Zmiana Kierunku, Karta Weź dwie, Karta Zmiany Postój, Karta Zmiany Zmiana
+                    kierunku, Karta Zmiany Weź dwie</i>
+            </li>
+            <li>
+                Dowolna karta dzika = 50 punktów<br />
+                <i>- Dzika karta Zmiany Ty weź dwie, Dzika karta Zmiany Wszyscy biorą karty, Dzika karta Zmiany Weź
+                    cztery, Dzika karta Odwróć wszystkie</i>
+            </li>
+            <p>
+                Pamiętaj, aby na bieżąco zzapisywać punktację z każdej rundy. Wygrywa gracz, który jako pierwszy
+                zdobędzie 500 punktów.
+            </p>
+            <h1>DLA GRACZY, KTÓRZY NIE ROZRÓŻNIAJĄ KOLORÓW</h1>
+            <p>
+                Aby ułatwić rozpoznanie koloru, pod cyfrą umieszczono specjalne znaczniki". Dzięki temu gracze z
+                jakąkolwiek formą zaburzenia percepcji kolorów mogą z łatwością brać udział w grze!
+            </p>
+            <img src="cards\color-info.png" style="border-radius: 20px; border: 3px solid black;" width="600px">
+            <!--! FAQ -->
+            <h1>FAQ</h1>
+            <p>
+                <i>Tutaj pojawią się odpowiedzi na najczęściej zadawane pytania.</i>
+            </p>
+        </div>
+        <!--! FOOTER -->
+        <div id="footer">
+            <br /><br />
+            <p>&copy; 2023 IVDamianVI</p>
+            <br />
+            <script src="js\script-card-3d-rotation.js"></script>
+        </div>
+    </main>
+</body>
+
+</html>

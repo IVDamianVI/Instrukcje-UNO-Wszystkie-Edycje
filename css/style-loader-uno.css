@@ -5,19 +5,38 @@
     width: 200px;
     height: 300px;
     position: relative;
-    animation: spin 1s linear infinite;
+    animation: spin .85s linear infinite;
 }
 
-.uno-card {
+.uno-card, .uno-card-wild, .uno-card-flip, .uno-card-flex {
     width: 160px;
     height: 240px;
-    background-image: url("../cards/uno-back.png");
     background-size: cover;
     background-position: center;
     border-radius: 5px;
     position: absolute;
     top: 30px;
-    scale: 0.5;
+    scale: .5;
+}
+
+.uno-card {
+    background-image: url("../cards/uno-back.png");
+}
+
+.uno-card-wild {
+    background-image: url("../cards/uno-back-wild.png");
+}
+
+.uno-card-flip {
+    background-image: url("../cards/uno-back-flip.png");
+}
+
+.uno-card-flex {
+    background-image: url("../cards/uno-back-flex.png");
+}
+
+.dos-card {
+    background-image: url("../cards/dos-back.png");
 }
 
 .loaded body {
@@ -53,10 +72,14 @@ main {
 /** ANIMACJE */
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(1.0);
+    }
+
+    50%{
+        transform: rotate(180deg) scale(1.3);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(360deg) scale(1.0);
     }
 }
