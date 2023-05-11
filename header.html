@@ -15,15 +15,28 @@
 
 <body>
   <div id="header">
+    <div class="arrow-container">
+      <img class="arrow" id="scroll-left" src="logo\left-arrow.png">
+    </div>
     <ul>
       <li class="logo"><a href="uno.html" target="_parent"><img alt="UNO" src="logo\uno-logo.png"></a></li>
-      <li class="logo"><a href="uno-all-wild.html" target="_parent"><img alt="UNO ALL WILD!" src="logo\uno-logo-all-wild.png"></a>
+      <li class="logo"><a href="uno-all-wild.html" target="_parent"><img alt="UNO ALL WILD!"
+            src="logo\uno-logo-all-wild.png"></a></li>
+      <li class="logo"><a href="uno-flip.html" target="_parent"><img alt="UNO FLIP!" src="logo\uno-logo-flip.png"></a>
       </li>
-      <li class="logo"><a href="uno-flip.html" target="_parent"><img alt="UNO FLIP!" src="logo\uno-logo-flip.png"></a></li>
-      <li class="logo"><a href="uno-flex.html" target="_parent"><img alt="UNO FLEX!" src="logo\uno-logo-flex.png"></a></li>
+      <li class="logo"><a href="uno-flex.html" target="_parent"><img alt="UNO FLEX!" src="logo\uno-logo-flex.png"></a>
+      </li>
       <li class="logo"><a href="dos.html" target="_parent"><img alt="DOS" src="logo\dos-logo.png"></a></li>
-      <!--! Work in progress: Light Mode Switch  -->
-      <!-- <li id="switch">
+    </ul>
+    <div class="arrow-container" id="scroll-right">
+      <img class="arrow" src="logo\right-arrow.png">
+    </div>
+    <script src="js\script-scroll.js"></script>
+  </div>
+</body>
+
+<!--! Work in progress: Light Mode Switch  -->
+<!-- <li id="switch">
         <div class="theme-switch-wrapper">
           <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
@@ -31,8 +44,5 @@
           </label>
         </div>
       </li> -->
-    </ul>
-  </div>
-</body>
 
 </html>

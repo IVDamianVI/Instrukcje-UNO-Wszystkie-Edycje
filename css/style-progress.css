@@ -17,3 +17,9 @@
     /*! Ver.2 */
     background: #efd13d;
 }
+
+@media (max-width: 600px) {
+    .progress-container {
+        display: none;
+    }
+}
