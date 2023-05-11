@@ -2,7 +2,7 @@
 <a href="https://ivdamianvi.github.io/Instrukcje-UNO/uno.html">[Link do strony]</a>
 
 # Zawarte edycje
-<b>Zaplanowana impelmentacja:</b>
+<b>Zaplanowana implementacja:</b>
 - [ ] DOS
 - [x] UNO
 - [ ] UNO EXPRESS
@@ -48,3 +48,4 @@
 - UNO Unocorns
 - UNO Wild Jackpot
 - UNO WWE
+- ...
