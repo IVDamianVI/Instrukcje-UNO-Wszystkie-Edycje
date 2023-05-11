@@ -64,7 +64,7 @@ li {
 
 p {
     font-size: 20px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 ol,
@@ -107,6 +107,11 @@ h1:hover {
     border-radius: 20px;
     border: 3px solid black;
     width: 600px;
+}
+
+.border{
+    border: 2px solid #FFFCF9;
+    padding: 12px;
 }
 
 @media only screen and (max-width: 735px) {

@@ -3,7 +3,7 @@
 
 # Zawarte edycje
 <b>Zaplanowana implementacja:</b>
-- [ ] DOS
+- [x] DOS
 - [x] UNO
 - [ ] UNO EXPRESS
 - [x] UNO ALL WILDS

@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="css\style-scrollbar.css" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin" />
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="icon" href="img\dos-logo.png" />
 
-    <title>UNO</title>
+    <title>DOS</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     <div class="loader-wrapper">
         <div class="loader">
             <div class="dos-card"></div>
-            <img class="dos-card" src="../cards/dos-back.png" alt="Tył karty DOS">
+            <img class="dos-card" src="../cards/uno-back-dos.png" alt="Tył karty DOS">
         </div>
     </div>
     <script src="js\script-loader.js"></script>
@@ -42,17 +42,247 @@
         <iframe src="header.html" frameborder="0"></iframe>
         <!--! CONTENT -->
         <div id="main">
-            <br/><br/><br/><br/><br/><br/>
+            <br /><br /><br /><br /><br /><br />
             <div class="card-description">
                 <div class="left-side-page">
                     <img src="img\dos-box.png" class="box">
                 </div>
                 <div class="card-description">
-                    <h1>Work in progress...</h1>
-                
+                    <h1>Zawartość</h1>
+                    <p>
+                        108 następujących kart:
+                        <br />
+                        <b>24 karty <span class="blue-text">niebieskie</span> -</b> po 3 karty
+                        1, 3, 4; po 2 karty 6, 7, 8, 9, 10; 2 karty #
+                        <br />
+                        <b>24 karty <span class="green-text">zielone</span> -</b> po 3 karty
+                        1, 3, 4; po 2 karty 6, 7, 8, 9, 10; 2 karty #
+                        <br />
+                        <b>24 karty <span class="red-text">czerwone</span> -</b> po 3 karty
+                        1, 3, 4; po 2 karty 6, 7, 8, 9, 10; 2 karty #
+                        <br />
+                        <b>24 karty <span class="yellow-text">żółty</span> -</b> po 3 karty
+                        1, 3, 4; po 2 karty 6, 7, 8, 9, 10; 2 karty #
+                        <br />
+                        <b>12 kart "Wybierz kolor" DOS</b>
+                    </p>
                 </div>
             </div>
-            
+            <h1>Cel gry</h1>
+            <p>
+                Zdobywaj punkty przez pozbycie się w każdej z rund wszystkich swoich kart, zanim zrobią to inni gracze.
+            </p>
+            <h1>Przygotowanie do gry</h1>
+            <ol>
+                <li>
+                    Każdy gracz ciągnie kartę. Karty rozdaje gracz, który wyciągnie najwyższy numer (karty z symbolem
+                    traktowane są jako zerowe).
+                </li>
+                <br />
+                <li>
+                    Osoba rozdająca tasuje karty i rozdaje po 7 kart dla każdego gracza.
+                </li>
+                <br />
+                <li>
+                    Osoba rozdająca umieszcza na środku 2 odsłonięte karty ze stosu do dobierania, tworząc tym samym
+                    środkowy rząd.
+                    <br />
+                    <i>
+                        UWAGA: PODCZAS GRY ŚRODKOWY RZĄD MOŻE SIĘ ROZROSNĄĆI ZAWIERAĆ NIE TYLKO TE 2 PIERWSZE
+                        KARTY. ALE O TYM TROCHĘ PÓŹNIEJ...
+                    </i>
+                </li>
+                <br />
+                <li>
+                    Umieść talię obok środkowego rzędu, pozostawiając miejsce na stos rozgrywki.
+                </li>
+            </ol>
+            <h1>Rozpoczęcie gry</h1>
+            <p>
+                Grę rozpoczyna pierwsza osoba na lewo od rozdającego.
+                <br />
+                Podczas swojej kolejki musisz DOPASOWAĆ kartę/karty ze swojej ręki do jednej lub dwóch kart ze
+                środkowego rzędu lub DOBRAĆ kartę.
+            </p>
+            <h1>DOPASOWANIE NUMERU</h1>
+            <p>
+                Możesz grać kartami ze swojej ręki, które pasują do numerów na kartach w środkowym rzędzie, na dwa
+                sposoby:
+                <br /><br />
+                <b>Pojedyncze dopasowanie numeru:</b> Zagraj jedną kartą dopasowaną numerem do jednej z kart w środkowym
+                rzędzie, niezależnie od jej koloru.
+                <br /><br />
+                Przykład: jeśli masz w dłoni czerwoną kartę 7, a jedna z kart w środkowym rzędzie to niebieska karta 7,
+                to możesz zagrać swoją kartą.
+                <br /><br />
+                <b>Podwójne dopasowanie numeru:</b> Zagraj dwoma (i tylko dwoma) kartami, które w sumie dają numer
+                jednej z
+                kart w środkowym rzędzie.
+                <br /><br />
+                Przykład: jeśli w środkowym rzędzie jest karta 7, możesz zagrać dowolnymi DWOMA kartami, których suma
+                daje 7, np. 5+2, 3+4, 6+1, niezależnie od ich koloru.
+                <br /><br />
+                Jeśli jesteś w stanie, możesz zrobić Pojedyncze dopasowanie numeru lub Podwójne dopasowanie numeru dla
+                każdej z kart w środkowym rzędzie, ale robiąc tylko jedno dopasowanie na kartę.
+            </p>
+            <h1>DOPASOWANIE NUMERU I KOLORU</h1>
+            <p>
+                Jeśli karta/karty, którymi grasz, pasują również kolorem do karty ze środkowego rzędu, z którą tworzysz
+                parę, to za każde takie dopasowanie otrzymujesz Bonus za dopasowanie koloru.
+                <br /><br />
+                <b>Pojedyncze dopasowanie koloru:</b> jeśli karta, którą grasz, pasuje do karty w środkowym rzędzie
+                numerem ORAZ kolorem, to na zakończenie swojej kolejki zdobywasz bonus.
+                <br /><br />
+            <div class="border">
+                <p>
+                    <b>BONUS:</b> a zakończenie swojej kolejki możesz dodać do środkowego rzędu jedną odsłoniętą kartę
+                    ze swojej dłoni.
+                </p>
+            </div>
+            <p>
+                <br />
+                Przykład: jeśli masz w dłoni czerwoną kartę 7, a jedna z kart w środkowym rzędzie to czerwona karta 7,
+                to po dopasowaniu tych kart zdobywasz Bonus za pojedyncze dopasowanie koloru.
+                <br /><br />
+                <b>Podwójne dopasowanie koloru:</b> jeśli dwie karty, którymi zagrasz, sumują się do numeru jednej z
+                kart w środkowym rzędzie ORAZ OBIE posiadają jej kolor, to zdobywasz podwójny bonus.
+                <br /><br />
+            </p>
+            <div class="border">
+                <p>
+                    <b>BONUS:</b> na zakończenie swojej kolejki (1) dodajesz do środkowego rzędu jedną odsłoniętą kartę
+                    ze swojej dłoni oraz (2) wszyscy pozostali gracze muszą dobrać po jednej karcie ze stosu dobierania.
+                </p>
+            </div>
+            <p>
+                <br />
+                Przykład: jeśli karta w środkowym rzędzie to czerwona karta 7, a Ty zagrasz DWOMA czerwonymi kartami,
+                które w sumie dają liczbę 7, zdobywasz Bonus za podwójne dopasowanie koloru.
+                <br /><br />
+                <i>
+                    UWAGA: JEŚLI TYLKO JEDNA Z TYCH DWÓCH KART MA TEN SAM KOLOR, CO KARTA W ŚRODKOWYM RZĘDZIE, TO <b>NIE
+                        JEST</b>
+                    TO DOPASOWANIE KOLORU.
+                </i>
+            </p>
+            <h1>DOBRANIE</h1>
+            <p>
+                Jeśli nie możesz (lub nie chcesz) utworzyć dopasowania, to dobierasz jedną kartę.
+                <br /><br />
+                Jeśli po dobraniu jesteś w stanie stworzyć dopasowanie, to możesz to zrobić.
+                <br /><br />
+                Jeśli po dobraniu karty nadal nie jesteś w stanie (lub nie chcesz) dopasować kart, dodaj jedną
+                odsłoniętą kartę ze swojej dłoni do środkowego rzędu.
+                <br /><br />
+                <i>
+                    UWAGA: JEŚLI W ŚRODKOWYM RZĘDZIE SĄ WIĘCEJ NIŻ DWIE KARTY, MOŻESZ DOPASOWYWAĆ KARTY DO DOWOLNEJ LUB
+                    WSZYSTKICH Z NICH. NIE MA OGRANICZENIA CO DO MAKSYMALNEJ LICZBY KART W ŚRODKOWYM RZĘDZIE. W ZWIĄZKU
+                    Z
+                    TYM CZASAMI PODCZAS KOLEJKI DANEGO GRACZA W ŚRODKOWYM RZĘDZIE BĘDĄ WIĘCEJ NIŻ DWIE KARTY. W
+                    ŚRODKOWYM
+                    RZĘDZIE MUSZĄ NATOMIAST ZAWSZE BYĆ CO NAJMNIEJ DWIE KARTY.
+                </i>
+            </p>
+            <h1>ZAKOŃCZENIE KOLEJKI</h1>
+            <p>
+                PODCZAS KOŃCZENIA KOLEJKI KONIECZNE JEST WYKONANIE NASTĘPUJĄCYCH KROKÓW W ODPOWIEDNIEJ KOLEJNOŚCI.
+                <br /><br />
+                1. Weź wszystkie swoje karty, którymi zagrałeś, w tym karty ze środkowego rzędu, do których zostały
+                dopasowane, i umieść je na stosie rozgrywki.
+                <br /><br />
+                2. Jeśli w środkowym rzędzie zostały mniej niż dwie karty, to uzupełnij środkowy rząd kartami z talii
+                tak, aby były w nim dwie karty.
+                <br /><br />
+                3. Następnie, jeśli podczas tej kolejki zdobyłeś jakiekolwiek Bonusy za dopasowanie koloru, nie zapomnij
+                dodać jednej odsłoniętej karty ze swojej dłoni do środkowego rzędu za każdy zdobyty Bonus za dopasowanie
+                koloru.
+            </p>
+            <h1>Karty specjalne</h1>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\dos-card-wild-2.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Wybierz kolor" DOS</b> - pełni rolę karty 2 dowolnego koloru, co sprawia,
+                        że jest szczególnie przydatna przy tworzeniu Podwójnego dopasowania.
+                        Ty decydujesz, jaki kolor będzie miała karta "Wybierz kolor" DOS podczas jej wykładania.
+                        Jeśli w środkowym rzędzie leży odkryta karta "Wybierz kolor" DOS, to Ty decydujesz,
+                        jaki ma ona kolor w momencie dopasowywania do niej swojej karty/kart.
+                        <br /><br />
+                        Przykład: jeśli w środkowym rzędzie jest czerwona karta 7,
+                        a Ty masz w dłoni czerwoną kartę 5 oraz kartę "Wybierz kolor" DOS,
+                        to możesz połączyć te karty, aby stworzyć Podwójne dopasowanie koloru z czerwoną kartą 7.
+                        Jeśli karta 5 w Twojej dłoni NIE jest czerwona, to wciąż możesz połączyć ją z kartą
+                        "Wybierz kolor" DOS, aby stworzyć Podwójne dopasowanie numeru.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\dos-card-hash-r.png" class="card" id="dos-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Wybierz kolor" DOS</b> - pełni funkcję dowolnej liczby od 1 do 10 w kolorze tej karty.
+                        Ty decydujesz, jaką wartość będzie miała karta # podczas jej wykładania.
+                        Jeśli w środkowym rzędzie leży odkryta karta #, to Ty decydujesz, jaką ma ona wartość w
+                        momencie dopasowywania do niej swojej karty/kart.
+                        <br /><br />
+                        Przykład: jeśli w środkowym rzędzie leży czerwona karta 7,
+                        to możesz użyć swojej #karty # jako karty 7 i stworzyć Pojedyncze dopasowanie numeru.
+                        Jeśli Twoja karta # ma kolor czerwony, to możesz też stworzyć Pojedyncze dopasowanie koloru.
+                        <br /><br />
+                        Jeśli masz w ręce niebieską kartę 3 oraz żółtą kartę #, to możesz je połączyć,
+                        uznając kartę # za kartę 4 i dopasowując obie karty do czerwonej karty 7,
+                        tworząc Podwójne dopasowanie numeru. Jeśli karta 3 i karta # OBIE są czerwone,
+                        możesz stworzyć też Podwójne dopasowanie koloru.
+                    </p>
+                </div>
+                <script src="js\script-card-change-dos.js"></script>
+            </div>
+            <h1>Reguła DOS</h1>
+            <p>
+                Zawsze, kiedy masz w ręce dokładnie dwie karty, musisz krzyknąć "DOS!" (czyli "dwa").
+                Jeśli zapomnisz tego zrobić, a inny gracz krzyknie "DOS!" przed Tobą,
+                to za karę musisz natychmiast dobrać dwie karty. Jeśli stanie się to podczas Twojej kolejki,
+                to nie dodawaj tych dwóch karnych kart do puli kart w swojej ręce aż do końca swojej kolejki.
+            </p>
+            <h1>Zakończenie rundy</h1>
+            <p>
+                Runda kończy się, gdy jeden z graczy opuszcza grę po pozbyciu się wszystkich swoich kart.
+                Gracz ten otrzymuje punkty za karty, które zostały w rękach pozostałych graczy
+                <br />
+                <i>
+                    (UWAGA: JEŚLI GRACZ, KTÓRY KOŃCZY GRĘ, ZDOBYŁ W DANEJ KOLEJCE JAKIKOLWIEK BONUS ZA PODWÓJNE
+                    DOPASOWANIE KOLORU, TO NALEŻY PAMIĘTAĆ, ABY PRZED PODLICZENIEM PUNKTÓW POZOSTALI GRACZE DOBRALI
+                    DO RĄK KARTY).
+                </i>
+            </p>
+            <h1>Obliczanie punktów</h1>
+            <li>
+                Wszystkie karty z numerami (1, 3-10) <span class="red-text">=</span> liczba punktów zgodna z cyfrą na
+                karcie
+            </li>
+            <br />
+            <li>
+                Karta "Wybierz kolor" DOS <span class="red-text">=</span> 20 punktów
+            </li>
+            <br />
+            <li>
+                Karta # <span class="red-text">=</span> 40 punktów
+            </li>
+            <br />
+            <p>
+                Punkty każdego z graczy należy zapisywać na oddzielnej kartce papieru (kartki nie należą do zestawu).
+                Zwycięzca poprzedniej rundy rozdaje karty w kolejnej rundzie.
+            </p>
+            <h1>Zwycięzca</h1>
+            <p>
+                Zwycięża gracz, który jako pierwszy zdobędzie 200 punktów.
+            </p>
+            <!--! FAQ -->
             <h1>FAQ</h1>
             <p>
                 <i>Tutaj pojawią się odpowiedzi na najczęściej zadawane pytania.</i>
@@ -60,9 +290,9 @@
         </div>
         <!--! FOOTER -->
         <div id="footer">
-            <br/><br/>
+            <br /><br />
             <p>&copy; 2023 IVDamianVI</p>
-            <br/>
+            <br />
             <script src="js\script-card-3d-rotation.js"></script>
         </div>
     </main>
