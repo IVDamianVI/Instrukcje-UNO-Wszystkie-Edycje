@@ -28,13 +28,9 @@ th {
 td {
     border-radius: 20px;
     border: 2px solid black;
-    text-align: justify;
+    /* text-align: justify; */
     padding: 10px;
     background-color: #28282B;
-}
-
-table li {
-    text-align: justify;
 }
 
 #caption{

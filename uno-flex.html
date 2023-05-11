@@ -28,7 +28,7 @@
     <div class="loader-wrapper">
         <div class="loader">
             <div class="uno-card-flex"></div>
-            <img class="uno-card-flex" src="cards/uno-back-flex.png" alt="Tył karty UNO Flex">
+            <img class="uno-card-flex" src="cards/uno-back-flex.png" alt="Podzielona karta UNO FLIP">
         </div>
     </div>
     <script src="js\script-loader.js"></script>
@@ -50,9 +50,9 @@
                 </div>
                 <div class="card-description">
                     <h1>Zawartość</h1>
-                    <p><b>
-                            112 kart - w tym 8 kart "Akcji" (szczegółowe informacje znajdziesz w sekcji Karty "Akcji")
-                        </b></p>
+                    <p>
+                        112 kart - w tym 8 kart "Akcji" (szczegółowe informacje znajdziesz w sekcji Karty "Akcji")
+                    </p>
                 </div>
             </div>
             <h1>Cel gry</h1>
@@ -63,18 +63,40 @@
             <p>
                 W UNO Flex są trzy rodzaje kart:
             </p>
-            <div class="card-container">
+            <div class="card-container" id="pc-version">
                 <div class="card-caption">
-                    <img src="cards\uno-card-flip-+1-r.png" class="card">
+                    <img src="cards\uno-card-flex-2.png" class="card">
                     <br />
                     <p><b>KLASYCZNE</b></p>
                 </div>
                 <div class="card-caption">
-                    <img src="cards\uno-card-flip-+1-r.png" class="card">
+                    <img src="cards\uno-card-flex-2-flex.png" class="card">
                     <br />
                     <p><b>ZMIANY</b></p>
                 </div>
                 <div class="card-caption">
+                    <img src="cards\uno-card-flex-green.png" class="card">
+                    <img src="cards\uno-card-flex-red.png" class="card">
+                    <br />
+                    <div class="caption">
+                        <p><b>AKCJI</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-mobile" id="mobile-version">
+                <div class="card-caption-mobile">
+                    <img src="cards\uno-card-flip-+1-r.png" class="card">
+                    <br />
+                    <p><b>KLASYCZNE</b></p>
+                </div>
+                <div class="card-caption-mobile">
+                    <img src="cards\uno-card-flip-+1-r.png" class="card">
+                    <br />
+                    <p><b>ZMIANY</b></p>
+                </div>
+            </div>
+            <div class="card-container-mobile">
+                <div class="card-caption-mobile">
                     <img src="cards\uno-card-flex-green.png" class="card">
                     <img src="cards\uno-card-flex-red.png" class="card">
                     <br />
@@ -99,7 +121,7 @@
                     Rozdaj graczom po jednej karcie "Akcji".
                 </li>
                 <li>
-                    Gracze zaczyają z kartami "Akcji" na zielonej stronie "<b>✔</b>".
+                    Gracze zaczyają z kartami "Akcji" na zielonej stronie "<b><span class="green-text">✔</span></b>".
                 </li>
                 <li>
                     Wybierz osobę rozdającą i potasuj pozostałe karty.
@@ -120,23 +142,33 @@
                     wskazówek zegara.
                 </li>
             </ol>
-            <div class="card-description">
+            <div id="pc-version">
+                <div class="card-description">
+                    <p>
+                        Niektóre karty klasyczne mają ikonę "Odwróć".
+                        <br />
+                        Więcej na ten temat dowiesz się z sekcji "Karta
+                        Akcji".
+                    </p>
+                </div>
+                <div class="card-caption">
+                    <img src="img\uno-card-info.png" style="width: 200px; padding-left: 50px;">
+                </div>
+            </div>
+            <div id="mobile-version">
+                <br />
                 <p>
-                    Niektóre karty klasyczne mają ikonę "Odwróć".
-                    <br />
-                    Więcej na ten temat dowiesz się z sekcji "Karta
+                    Niektóre karty klasyczne mają ikonę "Odwróć". Więcej na ten temat dowiesz się z sekcji "Karta
                     Akcji".
                 </p>
-            </div>
-            <div class="card-caption">
-                <img src="cards\uno-card-info.png" style="width: 200px; padding-left: 50px;">
+                <img src="img\uno-card-info.png" style="width: 200px; padding-left: 50px;">
             </div>
             <h1>Zagrajmy w UNO Flex!</h1>
             <p>
                 Gracz próbuje jak najszybciej pozbyć się wszystkich swoich kart. Podczas swojej kolejki wykłada
                 <b>JEDNĄ KARTĘ</b> na stos <b>ROZGRYWKI</b>.
             </p>
-            <div class="table-container">
+            <div class="table-container" id="pc-version">
                 <div class="table-caption">
                     <table>
                         <tr>
@@ -202,6 +234,62 @@
                     </table>
                 </div>
             </div>
+            <div class="table-container" id="mobile-version">
+                <div class="table-caption">
+                    <table>
+                        <tr>
+                            <th>
+                                Jeśli MA pasującą kartę w ręku, może wyłożyć ją
+                                na stos ROZGRYWKI.
+                            </th>
+                        </tr>
+                        <tr id="caption">
+                            <td>
+                                <ol>
+                                    <li>
+                                        Kartę można wyłożyć tylko wtedy, gdy
+                                        odpowiada ona co najmniej jednemu
+                                        elementowi karty na górze stosu ROZGRYWKI,
+                                        takiemu jak kolor, cyfra lub symbol.
+                                    </li>
+                                    <li>
+                                        Jeśli wyłożona karta jest kartą specjalną,
+                                        ma ona wyjątkową funkcję.<br/>
+                                        <i>(Szczegóły w sekcji Karty specjalne.)</i>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br/>
+                <div class="table-caption">
+                    <table>
+                        <tr>
+                            <th>
+                                Jeśli gracz NIE MA pasującej karty, musi DOBRAĆ
+                                JEDNĄ KARTĘ ze stosu LOSOWANIA.
+                            </th>
+                        </tr>
+                        <tr id="caption">
+                            <td>
+                                <ol>
+                                    <li>
+                                        Jeżeli jego <b>nowa</b> karta może zostać
+                                        wyłożona (sprawdź informacje powyżej)
+                                        może nią teraz zagrać.
+                                    </li>
+                                    <li>
+                                        Gracz może zawsze dobrać zmiast
+                                        wyłożyć kartę, nawet jeśli ma w swojej
+                                        puli pasującą kartę, którą mógłby wyłożyć.
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
             <p style="text-align: center;">
                 Po wyłożeniu lub dobraniu karty przez gracza kolejka przechodzi na następną osobę.
             </p>
@@ -222,8 +310,14 @@
             </p>
             <h1>Karty "Zmiany"</h1>
             <div class="card-container">
-                <div class="card-view">
-                    <img src="cards\uno-flex-info.png" width="150px">
+                <div id="pc-version">
+                    <div class="card-view">
+                        <img src="img\uno-flex-info.png" width="150px">
+                    </div>
+                </div>
+                <div id="mobile-version">
+                    <img src="img\uno-flex-info.png" width="150px">
+                    <br/>
                 </div>
                 <div class="card-description">
                     <p>
@@ -244,17 +338,17 @@
             <h1>Karta "Akcji"</h1>
             <p>
                 Karta "Akcji" określa, czy można użyć "zmieniającej" strony karty. Jeśli karta "Akcji" leży zieloną
-                stroną "✔" do góry, gracz może użyć elementu zmieniającego. Jeśli karta "Akcji" leży czerwoną
-                stroną "✗" do góry, gracz nie ma takiej możliwości.
+                stroną "<span class="green-text">✔</span>" do góry, gracz może użyć elementu zmieniającego. Jeśli karta "Akcji" leży czerwoną
+                stroną "<span class="red-text">✗</span>" do góry, gracz nie ma takiej możliwości.
                 <br />
-                Po użyciu karty "Akcji" w celu zagrania elementem "zmiany" należy obrócić ją zieloną stroną "✔"
-                do dołu, a czerwoną "✗" do góry. Karta musi leżeć czerwoną stroną "✗" do góry do momentu, gdy:
+                Po użyciu karty "Akcji" w celu zagrania elementem "zmiany" należy obrócić ją zieloną stroną "<span class="green-text">✔</span>"
+                do dołu, a czerwoną "<span class="red-text">✗</span>" do góry. Karta musi leżeć czerwoną stroną "<span class="red-text">✗</span>" do góry do momentu, gdy:
                 <br />
             <ul>
                 <li>
-                    Wszyscy gracze jednocześnie mają kartę "Akcji" odwróconą czerwoną stroną "✗" do góry.
+                    Wszyscy gracze jednocześnie mają kartę "Akcji" odwróconą czerwoną stroną "<span class="red-text">✗</span>" do góry.
                     <br />
-                    Odwracają wtedy swoje karty zieloną stroną "✔" do góry.
+                    Odwracają wtedy swoje karty zieloną stroną "<span class="green-text">✔</span>" do góry.
                 </li>
                 <li>
                     Dany gracz zagra kartą z cyfrą, na której znajduje się ikona "Odwróć".
@@ -269,9 +363,9 @@
                     <th>
                         Jeśli gracz zagra kartą z cyfrą, na której znajduje się ikona "Odwróć", gracz
                         <br />
-                        MUSI odwrócić kartę „Akcji”. Jeśli ta karta leży zieloną stroną"✔" do góry,
+                        MUSI odwrócić kartę „Akcji”. Jeśli ta karta leży zieloną stroną"<span class="green-text">✔</span>" do góry,
                         <br />
-                        należy obrócić ją na czerwoną stronę "✗" - i odwrotnie.
+                        należy obrócić ją na czerwoną stronę "<span class="red-text">✗</span>" - i odwrotnie.
                     </th>
                 </tr>
             </table>
@@ -478,7 +572,7 @@
                 Aby ułatwić rozpoznanie koloru, pod cyfrą umieszczono specjalne znaczniki". Dzięki temu gracze z
                 jakąkolwiek formą zaburzenia percepcji kolorów mogą z łatwością brać udział w grze!
             </p>
-            <img src="cards\color-info.png" style="border-radius: 20px; border: 3px solid black;" width="600px">
+            <img src="img\color-info-a.png" id="info-color">
             <!--! FAQ -->
             <h1>FAQ</h1>
             <p>

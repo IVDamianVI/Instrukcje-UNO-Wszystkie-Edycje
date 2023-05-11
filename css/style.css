@@ -20,12 +20,6 @@ iframe {
     position: fixed;
 }
 
-@media (max-width: 600px) {
-    iframe {
-        height: 50vh;
-    }
-}
-
 #main {
     background-color: #28282B;
     font-size: 15px;
@@ -107,4 +101,22 @@ h1:hover {
     color: #a1dbff;
     text-shadow: 2px 2px 0px #000000, 4px 4px 0px rgba(0, 0, 0, 0.201);
     -webkit-text-stroke-width: 1px black;
+}
+
+#info-color {
+    border-radius: 20px;
+    border: 3px solid black;
+    width: 600px;
+}
+
+@media (max-width: 600px) {
+    iframe {
+        height: 50vh;
+    }
+
+    #info-color {
+        border-radius: 20px;
+        border: 3px solid black;
+        width: 320px;
+    }
 }

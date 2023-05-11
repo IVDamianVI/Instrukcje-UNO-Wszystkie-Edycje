@@ -1,0 +1,51 @@
+.box{
+    transition: transform 0.1s ease, width 0.5s ease;
+}
+
+.card {
+    width: 100px;
+    transition: transform 0.1s ease, width 0.5s ease;
+}
+
+.card:hover {
+    transform: translateZ(10px);
+}
+
+.card-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+    margin-right: 20px;
+    height: 150px;
+    text-align: center;
+    flex-direction: column; /* Dodana właściwość */
+    align-items: center; /* Dodana właściwość */
+}
+
+.card-view {
+    margin-top: 10px;
+}
+
+.card-container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card-description{
+    height: 150px;
+}
+
+.card-description, .card-caption {
+    margin-left: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card-caption, .card-caption p {
+    text-align: center;
+}
+
+.card-caption {
+    padding-right: 100px;
+}
