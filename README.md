@@ -1,5 +1,5 @@
 # Jak grać w UNO?
-<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/IVDamianVI/Instrukcje-UNO-Wszystkie-Edycje/main/uno.html">LINK DO STRONY</a>
+<a href="https://ivdamianvi.github.io/Instrukcje-UNO/uno.html">[Link do strony]</a>
 
 # Zawarte edycje
 - [ ] DOS - work in progress
