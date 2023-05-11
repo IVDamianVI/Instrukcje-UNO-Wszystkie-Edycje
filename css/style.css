@@ -109,7 +109,7 @@ h1:hover {
     width: 600px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 735px) {
     iframe {
         height: 50vh;
     }
