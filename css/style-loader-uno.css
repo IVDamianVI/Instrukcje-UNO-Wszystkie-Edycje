@@ -23,6 +23,10 @@
     background-image: url("../cards/uno-back.png");
 }
 
+.uno-card-express {
+    background-image: url("../cards/uno-back-express.png");
+}
+
 .uno-card-wild {
     background-image: url("../cards/uno-back-wild.png");
 }
