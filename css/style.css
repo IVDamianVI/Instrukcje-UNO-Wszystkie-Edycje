@@ -67,6 +67,15 @@ p {
     /* padding-bottom: 10px; */
 }
 
+p::selection,
+li::selection,
+h1::selection,
+p::-moz-selection,
+li::-moz-selection,
+h1::-moz-selection {
+    background-color: #08B2E3;
+}
+
 ol,
 ul {
     padding: 0;
@@ -109,9 +118,17 @@ h1:hover {
     width: 600px;
 }
 
-.border{
+.border {
     border: 2px solid #FFFCF9;
     padding: 12px;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    background-color: transparent;
 }
 
 @media only screen and (max-width: 735px) {
