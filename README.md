@@ -5,7 +5,7 @@
 <b>Zaplanowana implementacja:</b>
 - [x] DOS
 - [x] UNO
-- [ ] UNO EXPRESS
+- [x] UNO EXPRESS
 - [x] UNO ALL WILDS
 - [x] UNO FLEX
 - [x] UNO FLIP
