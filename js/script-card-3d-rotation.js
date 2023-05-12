@@ -5,17 +5,17 @@ const THRESHOLD = 12;
 let inactiveTimer;
 
 function handleHover(e) {
-  resetInactiveTimer(); // Zresetuj licznik nieaktywności przy każdym ruchu myszą
+  resetInactiveTimer();
   const { clientX, clientY, currentTarget } = e;
   const { clientWidth } = currentTarget;
 
   const rect = currentTarget.getBoundingClientRect();
-  const offsetX = clientX - rect.left;
-  const offsetY = clientY - rect.top;
+  const offsetX = clientX - rect.left - 40;
+  const offsetY = clientY - rect.top + 120;
   const horizontal = (offsetX / clientWidth) * 2;
   const vertical = (offsetY / window.innerHeight) * 2;
   const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
-  const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+  const rotateY = (THRESHOLD / 2 - vertical * THRESHOLD).toFixed(2);
 
   currentTarget.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
 }
@@ -25,14 +25,13 @@ function resetStyles(e) {
 }
 
 function resetInactiveTimer() {
-  clearTimeout(inactiveTimer); // Wyczyść poprzedni licznik nieaktywności
+  clearTimeout(inactiveTimer);
   inactiveTimer = setTimeout(() => {
-    // Po 2 sekundach nieaktywności
     cards.forEach((card) => {
-      card.style.transform = ""; // Przywróć obrazy .card do normalnej wartości
+      card.style.transform = "";
     });
     boxes.forEach((box) => {
-      box.style.transform = ""; // Przywróć obrazy .box do normalnej wartości
+      box.style.transform = "";
     });
   }, 500);
 }
@@ -47,5 +46,5 @@ if (!motionMatchMedia.matches) {
     box.addEventListener("mouseleave", resetStyles);
   });
 
-  resetInactiveTimer(); // Rozpocznij licznik nieaktywności na starcie
+  resetInactiveTimer();
 }

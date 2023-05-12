@@ -40,7 +40,7 @@
         </div>
         <script src="js\script-progress.js"></script>
         <!--! HEADER -->
-        <iframe src="header.html" frameborder="0"></iframe>
+        <iframe id="header-frame" src="header.html" frameborder="0"></iframe>
         <!--! CONTENT -->
         <div id="main">
             <br /><br /><br /><br /><br /><br />
@@ -49,9 +49,14 @@
                     <img src="img\uno-box-flex.png" class="box">
                 </div>
                 <div class="card-description">
+                    <br />
+                    <img src="img\players-2-8.png" class="game-info">
+                    <img src="img\age-7.png" class="game-info">
                     <h1>Zawartość</h1>
                     <p>
-                        112 kart - w tym 8 kart "Akcji" (szczegółowe informacje znajdziesz w sekcji Karty "Akcji")
+                        112 kart - w tym 8 kart "Akcji"
+                        <br />
+                        (szczegółowe informacje znajdziesz w sekcji Karty "Akcji")
                     </p>
                 </div>
             </div>
@@ -295,9 +300,10 @@
                     </table>
                 </div>
             </div>
-            <p style="text-align: center;">
+            <p>
                 Po wyłożeniu lub dobraniu karty przez gracza kolejka przechodzi na następną osobę.
             </p>
+            <br/>
             <p><i>
                     <b>UWAGA:</b> jeśli na stosie LOSOWANIA nie ma żadnych kart, trzeba przetasować stos ROZGRYWKI,
                     <br />
@@ -346,7 +352,7 @@
                 stroną "<span class="green-text">✔</span>" do góry, gracz może użyć elementu zmieniającego. Jeśli karta
                 "Akcji" leży czerwoną
                 stroną "<span class="red-text">✗</span>" do góry, gracz nie ma takiej możliwości.
-                <br />
+                <br /><br />
                 Po użyciu karty "Akcji" w celu zagrania elementem "zmiany" należy obrócić ją zieloną stroną "<span
                     class="green-text">✔</span>"
                 do dołu, a czerwoną "<span class="red-text">✗</span>" do góry. Karta musi leżeć czerwoną stroną "<span
@@ -367,6 +373,7 @@
                 </li>
             </ul>
             </p>
+            <br />
             <div id="pc-version">
                 <table>
                     <tr>
@@ -385,15 +392,15 @@
                 <table>
                     <tr>
                         <th>
-                            Jeśli gracz zagra kartą z cyfrą, 
+                            Jeśli gracz zagra kartą z cyfrą,
                             <br />
-                            na której znajduje się ikona "Odwróć", 
-                            gracz MUSI odwrócić kartę „Akcji”. 
+                            na której znajduje się ikona "Odwróć",
+                            gracz MUSI odwrócić kartę „Akcji”.
                             <br />
-                            Jeśli ta karta leży zieloną stroną 
+                            Jeśli ta karta leży zieloną stroną
                             <br />
                             "<span class="green-text">✔</span>" do góry, należy obrócić ją na
-                            <br/>
+                            <br />
                             czerwoną stronę "<span class="red-text">✗</span>"
                             <br />
                             - i odwrotnie.
@@ -585,26 +592,28 @@
             <li>
                 Wszystkie karty z cyfrą (1-8) <span class="red-text">=</span> liczba punktów zgodna z cyfrą na karcie
             </li>
-            <br/>
+            <br />
             <li>
                 Dowolna karta specjalna <span class="red-text">=</span> 20 punktów<br />
                 <i>- Karta Postój, Karta Zmiana Kierunku, Karta Weź dwie, Karta Zmiany Postój, Karta Zmiany Zmiana
                     kierunku, Karta Zmiany Weź dwie</i>
             </li>
-            <br/>
+            <br />
             <li>
                 Dowolna karta dzika <span class="red-text">=</span> 50 punktów<br />
                 <i>- Dzika karta Zmiany Ty weź dwie, Dzika karta Zmiany Wszyscy biorą karty, Dzika karta Zmiany Weź
                     cztery, Dzika karta Odwróć wszystkie</i>
             </li>
-            <br/>
+            <br />
             <p>
                 Pamiętaj, aby na bieżąco zzapisywać punktację z każdej rundy. Wygrywa gracz, który jako pierwszy
                 zdobędzie 500 punktów.
             </p>
             <h1>DLA GRACZY, KTÓRZY NIE ROZRÓŻNIAJĄ KOLORÓW</h1>
             <p>
-                Aby ułatwić rozpoznanie koloru, pod cyfrą umieszczono specjalne znaczniki". Dzięki temu gracze z
+                Aby ułatwić rozpoznanie koloru, pod cyfrą umieszczono specjalne znaczniki". 
+                <br/>
+                Dzięki temu gracze z
                 jakąkolwiek formą zaburzenia percepcji kolorów mogą z łatwością brać udział w grze!
             </p>
             <img src="img\color-info-a.png" id="info-color">
@@ -614,13 +623,9 @@
                 <i>Tutaj pojawią się odpowiedzi na najczęściej zadawane pytania.</i>
             </p>
         </div>
+        <script src="js\script-card-3d-rotation.js"></script>
         <!--! FOOTER -->
-        <div id="footer">
-            <br /><br />
-            <p>&copy; 2023 IVDamianVI</p>
-            <br />
-            <script src="js\script-card-3d-rotation.js"></script>
-        </div>
+        <iframe id="footer-frame" src="footer.html" frameborder="0"></iframe>
     </main>
 </body>
 

@@ -14,10 +14,15 @@ body {
     font-family: 'Cabin', sans-serif;
 }
 
-iframe {
+#header-frame {
     width: 100%;
     height: 11%;
     position: fixed;
+}
+
+#footer-frame {
+    width: 100%;
+    height: 100px;
 }
 
 #main {
@@ -26,13 +31,6 @@ iframe {
     padding-left: 10%;
     padding-right: 10%;
     min-height: 100vh;
-}
-
-#footer {
-    background-color: #28282B;
-    font-size: 15px;
-    text-align: center;
-    height: 100px;
 }
 
 a,
@@ -44,7 +42,7 @@ a:hover {
 
 .left-side-page {
     float: left;
-    width: 38vh;
+    width: 28vh;
     min-height: 30vh;
 }
 
@@ -129,6 +127,15 @@ h1:hover {
 
 ::-moz-selection {
     background-color: transparent;
+}
+
+.game-info {
+    width: 50px;
+    transition: scale 0.5s ease;
+}
+
+.game-info:hover {
+    scale: 1.5;
 }
 
 @media only screen and (max-width: 735px) {
