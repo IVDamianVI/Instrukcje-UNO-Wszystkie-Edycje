@@ -22,7 +22,7 @@ body {
 
 #footer-frame {
     width: 100%;
-    height: 100px;
+    height: 120px;
 }
 
 #main {
@@ -31,6 +31,8 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     min-height: 100vh;
+    width: 50%;
+    margin: 0 auto;
 }
 
 a,
@@ -58,11 +60,12 @@ p {
 
 li {
     font-size: 20px;
+    margin-top: 5px;
 }
 
 p {
     font-size: 20px;
-    /* padding-bottom: 10px; */
+    margin-top: 10px;
 }
 
 p::selection,
@@ -138,7 +141,39 @@ h1:hover {
     scale: 1.5;
 }
 
+.info-div {
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #28282B;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #FFFCF9;
+    max-width: 500px;
+    height: 290px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+table.clear,
+th.clear,
+td.clear,
+tbody.clear {
+    border: 0px solid #fff !important;
+    border-radius: 0px !important;
+    background-color: transparent !important;
+}
+
 @media only screen and (max-width: 735px) {
+    #main {
+        width: auto;
+        margin: 0 auto;
+    }
+
     iframe {
         height: 50vh;
     }
@@ -148,4 +183,27 @@ h1:hover {
         border: 3px solid black;
         width: 320px;
     }
+
+    td.clear {
+        display: block;
+    }
+
+    table.clear,
+    th.clear,
+    td.clear,
+    tbody.clear {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .info-div {
+        height: 250px;
+        margin: 0px;
+        max-width: 260px;
+    }
+
+    #footer-frame {
+        height: 180px;
+    }
+
 }

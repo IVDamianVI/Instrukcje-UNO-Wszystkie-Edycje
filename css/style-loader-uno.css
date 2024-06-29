@@ -8,7 +8,12 @@
     animation: spin .85s linear infinite;
 }
 
-.uno-card, .uno-card-wild, .uno-card-flip, .uno-card-flex, .dos-card {
+.uno-card,
+.uno-card-wild,
+.uno-card-flip,
+.uno-card-flex,
+.uno-card-no-mercy,
+.dos-card {
     width: 160px;
     height: 240px;
     background-size: cover;
@@ -37,6 +42,10 @@
 
 .uno-card-flex {
     background-image: url("../cards/uno-back-flex.png");
+}
+
+.uno-card-no-mercy {
+    background-image: url("../cards/uno-back-no-mercy.png");
 }
 
 .dos-card {
@@ -79,7 +88,7 @@ main {
         transform: rotate(0deg) scale(1.0);
     }
 
-    50%{
+    50% {
         transform: rotate(180deg) scale(1.3);
     }
 

@@ -9,3 +9,4 @@
 - [x] UNO ALL WILDS
 - [x] UNO FLEX
 - [x] UNO FLIP
+- [x] UNO NO MERCY

@@ -64,13 +64,6 @@ iframe {
     min-height: 100vh;
 }
 
-#footer {
-    background-color: #28282B;
-    font-size: 15px;
-    text-align: center;
-    height: 100px;
-}
-
 a,
 a:visited,
 a:hover {

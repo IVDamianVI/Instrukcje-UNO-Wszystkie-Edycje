@@ -22,7 +22,7 @@ table {
 th {
     font-weight: bold;
     padding: 10px;
-    color:#28282B;
+    color: #28282B;
 }
 
 td {
@@ -31,8 +31,9 @@ td {
     /* text-align: justify; */
     padding: 10px;
     background-color: #28282B;
+    max-width: 500px !important;
 }
 
-#caption{
+#caption {
     height: 210px;
 }

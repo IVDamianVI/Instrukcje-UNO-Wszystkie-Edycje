@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\style-progress.css" />
+    <link rel="stylesheet" href="css\style-text-color.css" />
+    <link rel="stylesheet" href="css\style-loader-uno.css" />
+    <link rel="stylesheet" href="css\style-card.css" />
+    <link rel="stylesheet" href="css\style-scrollbar.css" />
+    <link rel="stylesheet" href="css\style-table.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="img\uno-logo-no-mercy.png" />
+    <title>UNO NO MERCY - Zasady i gra w nowej wersji</title>
+
+    <meta name="description"
+        content="Poznaj UNO NO MERCY - nową, intensywniejszą wersję klasycznej gry karcianej UNO. Sprawdź zasady, karty specjalne i ciesz się grą bez litości!">
+    <meta name="keywords" content="UNO NO MERCY, gra karciana, zasady UNO, rodzinna gra, karty specjalne, bez litości">
+    <meta name="author" content="Damian Grubecki">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="UNO NO MERCY - Zasady i gra w nowej wersji">
+    <meta property="og:description"
+        content="Poznaj UNO NO MERCY - nową, intensywniejszą wersję klasycznej gry karcianej UNO. Sprawdź zasady, karty specjalne i ciesz się grą bez litości!">
+    <meta property="og:image" content="https://ivdamianvi.github.io/Instrukcje-UNO/img/uno-logo-no-mercy.png">
+    <meta property="og:url" content="https://ivdamianvi.github.io/Instrukcje-UNO/uno-no-mercy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UNO NO MERCY - Zasady i gra w nowej wersji">
+    <meta name="twitter:description"
+        content="Poznaj UNO NO MERCY - nową, intensywniejszą wersję klasycznej gry karcianej UNO. Sprawdź zasady, karty specjalne i ciesz się grą bez litości!">
+    <meta name="twitter:image" content="https://ivdamianvi.github.io/Instrukcje-UNO/img/uno-logo-no-mercy.png">
+    <meta name="twitter:creator" content="Damian Grubecki">
+</head>
+
+
+<body>
+    <!--! LOADING SCREEN -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="uno-card-no-mercy"></div>
+            <img class="uno-card-no-mercy" src="cards/uno-back-no-mercy.png" alt="Tył karty UNO NO MERCY">
+        </div>
+    </div>
+    <script src="js\script-loader.js"></script>
+    <!--! PAGE -->
+    <main class="animate__animated animate__fadeIn">
+        <!--! PROGRESS BAR -->
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <script src="js\script-progress.js"></script>
+        <!--! HEADER -->
+        <iframe id="header-frame" src="header.html" frameborder="0"></iframe>
+        <!--! CONTENT -->
+        <div id="main">
+            <br /><br /><br /><br /><br /><br />
+            <div class="card-description">
+                <div class="left-side-page">
+                    <img src="img\uno-box-no-mercy.png" class="box">
+                </div>
+                <div class="card-description">
+                    <br />
+                    <img src="img\players-2-7.png" class="game-info">
+                    <img src="img\age-7.png" class="game-info">
+                    <h1>Zawartość</h1>
+                    <p>168 kart</p>
+                </div>
+            </div>
+            <h1>Cel gry</h1>
+            <p>
+                Jako pierwszy gracz pozbądź się wszystkich kart z ręki lub wyeliminuj pozostałych graczy, aż będziesz
+                jedyną osobą pozostałą w grze.
+            </p>
+            <h1>UNO NO MERCY W SKRÓCIE</h1>
+            <p>
+                Gra się tak samo jak w klasyczną grę UNO®, dopasowując kolory, cyfry lub symbole. Jednak 4 reguły
+                specjalne i 6 supertrudnych kart akcji podkręcają emocje (więcej na temat kart i reguł w dalszej części
+                instrukcji). Są też 2 sposoby na wygraną: można tradycyjnie pozbyć się wszystkich swoich kart albo
+                pozbyć się wszystkich graczy z gry (o tym też więcej w dalszej części). Tak jak w klasycznej wersji -
+                gdy graczowi pozostanie tylko jedna karta, musi zawołać "UNO!".
+            </p>
+            <h1>Przygotowanie</h1>
+            <ol>
+                <li>
+                    Wybierzcie osobę rozdającą i potasujcie karty. Uwaga: kart jest bardzo dużo, więc jeśli macie
+                    problem z tasowaniem, spróbujcie rozdzielić talię między kilku graczy.
+                </li>
+                <li>
+                    Każdy gracz powinien dostać 7 kart.
+                </li>
+                <li>
+                    Ułóżcie pozostałe karty <b>ZAKRYTE</b> na środku stołu. Utworzą one stos <b>LOSOWANIA</b>.
+                </li>
+                <li>
+                    Odkryjcie górną kartę ze stosu <b>LOSOWANIA</b> i połóżcie ją obok <b>ODKRYTĄ</b> na stole, aby
+                    utworzyć stos <b>ROZGRYWKI</b>. Jeśli jest to karta specjalna, pomińcie ją i odwróćcie następną
+                    kartę.
+                </li>
+                <li>
+                    Grę rozpoczyna osoba po lewej od rozdającego, a rozgrywka toczy się zgodnie z ruchem wskazówek
+                    zegara.
+                </li>
+            </ol>
+            <h1>Zagrajmy w UNO NO MERCY</h1>
+            <p>
+                Gracz próbuje jak najszybciej pozbyć się wszystkich swoich kart. Podczas swojej kolejki wykłada
+                <b>JEDNĄ KARTĘ</b> na stos <b>ROZGRYWKI</b>.
+            </p>
+            <table class="clear">
+                <tbody class="clear">
+                    <tr class="clear">
+                        <td class="clear">
+                            <table>
+                                <tr>
+                                    <th>
+                                        Jeśli MA pasującą kartę w ręku, może wyłożyć ją
+                                        <br />
+                                        na stos ROZGRYWKI.
+                                    </th>
+                                </tr>
+                                <tr id="caption">
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                Kartę można wyłożyć tylko wtedy, gdy
+                                                odpowiada ona co najmniej jednemu
+                                                elementowi karty na górze stosu ROZGRYWKI,
+                                                takiemu jak kolor, cyfra lub symbol.
+                                            </li>
+                                            <li>
+                                                Jeśli wyłożona karta jest kartą specjalną,
+                                                ma ona wyjątkową funkcję.
+                                                <i>(Szczegóły w sekcji Karty specjalne.)</i>
+                                            </li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="clear">
+                            <div class="info-div">
+                                Jeśli gracz NIE MA pasującej karty, MUSI
+                                dobierać karty ze stosu LOSOWANIA do
+                                momentu, aż WYCIĄGNIE KARTĘ, KTÓRĄ
+                                MOŻE WYŁOŻYĆ. Potem wykłada tę kartę.
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Gdy gracz skończy swój ruch, kolejka przechodzi na następną osobę.
+            </p>
+            <br />
+            <p>
+                <b>UWAGA:</b> Jeśli karty ze stosu LOSOWANIA się skończą, należy przetasować stos ROZGRYWKI, aby
+                utworzyć<br /> nowy stos LOSOWANIA.
+            </p>
+            <h1>Zawołaj: "UNO!"</h1>
+            <p>
+                W momencie gdy gracz zostaje z tylko jedną kartą w ręku, musi krzyknąć "UNO",
+                <br />
+                aby dać znać innym graczom, że szykuje się do wygranej.
+                <br />
+                Jeśli jednak ktoś go przyłapie i pierwszy zawoła "UNO" (ale przed rozpoczęciem kolejki
+                <br />
+                następnego gracza), gracz z jedną kartą musi dobrać 2 dodatkowe karty!
+            </p>
+            <h1>Wygrana</h1>
+            <p>Gracz wygrywa po wyłożeniu swojej ostatniej karty. Inna opcja wygranej: jeśli pozostali gracze zostali
+                wyeliminowani z gry (patrz reguła "Litości!"), wygrywa gracz, który pozostał. Czas przetasować
+                karty i zacząć grę od nowa!</p>
+            <h1>REGUŁY SPECJALNE</h1>
+            <p><b>Sumowanie:</b> Jeśli ktoś wyłoży jedną z kart,Weź" (+2, +4, +6, +10), inny gracz może "zsumować" kary
+                i przenieść je na kolejnego gracza, wykładając kartę "Weź" ze swojej ręki, jeśli ma ona taką samą lub
+                większą wartość. Jeśli to zrobi, ta karta sumuje się z poprzednią jako łączna kara dla kolejnego gracza.
+                Jeśli np. ktoś wyłoży kartę "Weź cztery" przeciwko danemu graczowi, ten gracz może położyć na niej swoją
+                kartę "Weź sześć" - w ten sposób następny gracz w kolejce musi dobrać 10 kart (chyba że ma kartę "Weź
+                sześć" lub z wyższą wartością, wtedy kara przechodzi na jeszcze następnego gracza). Trwa to tak długo,
+                aż ktoś nie będzie w stanie wyłożyć karty o liczbie równej lub większej od ostatniej zagranej karty. Na
+                takiego gracza spada kara ze wszystkich zsumowanych kart "Weź". Auć!
+            </p>
+            <p>
+                <b>"Litości!":</b> Jeśli gracz zgromadzi 25 lub więcej kart w ręku, odpada z gry. Jego karty są
+                odkładane na bok do czasu, aż talia się wyczerpie i trzeba ją będzie przetasować.
+            </p>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-7-no-mercy-r.png" class="card" id="card-7-no-mercy">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Siódemkowa zamiana:</b> Gdy gracz wyłoży kartę 7 dowolnego koloru, MUSI zamienić się swoimi
+                        kartami z innym wybranym przez siebie graczem. Rozgrywka toczy się dalej w tej samej kolejności.
+                    </p>
+                </div>
+                <script src="js\script-card-change-7-no-mercy.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-0-no-mercy-r.png" class="card" id="card-0-no-mercy">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Zerowe przekazanie:</b> Gdy gracz wyłoży kartę 0 dowolnego koloru, KAŻDY gracz musi przekazać
+                        swoje karty kolejnemu graczowi zgodnie z kierunkiem rozgrywki.
+                    </p>
+                </div>
+                <script src="js\script-card-change-0-no-mercy.js"></script>
+            </div>
+            <h1>Karty specjalne</h1>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-+2-no-mercy-r.png" class="card" id="plus2-no-mercy">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Weź dwie"</b> - Następny gracz musi dobrać 2 karty i traci swoją kolejkę.
+                    </p>
+                </div>
+                <script src="js\script-card-change-+2-no-mercy.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-+4-no-mercy-r.png" class="card" id="plus4-no-mercy">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Weź cztery"</b> - Następny gracz musi dobrać 4 karty i traci swoją kolejkę.
+                    </p>
+                </div>
+                <script src="js\script-card-change-+4-no-mercy.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-stop-no-mercy-r.png" class="card" id="stop-no-mercy">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Postój"</b> - Następny gracz traci swoją kolejkę.
+                    </p>
+                </div>
+                <script src="js\script-card-change-stop-no-mercy.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-direction-no-mercy-r.png" class="card" id="direction-no-mercy">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Zmiana kierunku"</b> - Zmienia się kierunek gry. Jeśli rozgrywka toczyła się zgodnie z
+                        ruchem wskazówek zegara, teraz będzie kontynuowana w kierunku przeciwnym do ruchu wskazówek
+                        zegara (i odwrotnie). Gdy zostało tylko dwóch graczy, karta "Zmiana kierunku" sprawia, że drugi
+                        gracz zostanie pominięty i gracz, który wyłożył tę kartę, ma jeszcze jedną kolejkę.
+                    </p>
+                </div>
+                <script src="js\script-card-change-direction-no-mercy.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-all-no-mercy-r.png" class="card" id="all-no-mercy">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Wyłóż wszystkie"</b> - Gracz wykłada wszystkie swoje karty w tym samym kolorze co
+                        karta "Wyłóż wszystkie", którą zagrywa. Umieszcza te karty pod kartą "Wyłóż wszystkie".
+                    </p>
+                </div>
+                <script src="js\script-card-change-all-no-mercy.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-stop-all-no-mercy-r.png" class="card" id="stop-all-no-mercy">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Postój dla wszystkich"</b> - Wszyscy gracze zostają pominięci, a gracz, który wyłożył
+                        tę kartę, ma dodatkową kolejkę.
+                    </p>
+                </div>
+                <script src="js\script-card-change-stop-all-no-mercy.js"></script>
+            </div>
+            <h1>DZIKIE KARTY</h1>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-direction-+4-no-mercy.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Dzika karta "Zmiana kierunku + Weź cztery":</b> Zmienia kierunek gry, a następny gracz (po
+                        zmianie kierunku) musi dobrać 4 karty i traci swoją kolejkę. Jeśli zostało tylko 2 graczy, karta
+                        pomija drugiego z nich i zmusza gracza, który ją WYŁOŻYŁ, do dobrania 4 kart. Może on użyć
+                        reguły sumowania, aby przenieść karę z powrotem na rywala. Ta karta pełni też funkcję dzikiej
+                        karty "Wybierz kolor", więc gracz, który ją wyłożył, wybiera kolor, od którego będzie
+                        kontynuowana zabawa.
+                    </p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-+6-no-mercy.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Dzika karta "Weź sześć":</b> Następny gracz musi wziąć 6 kart i traci swoją kolejkę. Ta karta
+                        pełni też funkcję dzikiej karty "Wybierz kolor", więc gracz, który ją wyłożył, wybiera kolor, od
+                        którego będzie kontynuowana zabawa.
+                    </p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-+10-no-mercy.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Dzika karta "Weź dziesięć":</b> Następny gracz musi wziąć 10 kart i traci swoją kolejkę. Ta
+                        karta pełni też funkcję dzikiej karty, "Wybierz kolor", więc gracz, który ją wyłożył, wybiera
+                        kolor, od którego będzie kontynuowana zabawa.
+                    </p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-roulette-no-mercy.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Dzika karta "Kolorowa ruletka":</b> Następny gracz wybiera kolor. Potem musi odkrywać
+                        pojedynczo karty ze stosu LOSOWANIA, aż trafi na kartę tego koloru (Dzikie karty się NIE liczą).
+                        Następnie musi dodać wszystkie odkryte karty do tych w swoim ręku i traci kolejkę. Gra toczy się
+                        dalej od wybranego koloru.
+                    </p>
+                </div>
+            </div>
+            <h1>Liczenie punktów (opcjonalny sposób na ustalenie wygranej)</h1>
+            <p>
+                Gdy gracz wygra rozdanie, otrzymuje punkty na podstawie kart pozostałych w rękach jego przeciwników.
+                <br />
+                Karty mają następującą punktację:
+            </p>
+            <br />
+            <li>
+                Wszystkie karty z numerami (0-9) <span class="red-text">=</span> liczba punktów zgodna z cyfrą na karcie
+            </li>
+            <br />
+            <li>
+                Karta specjalna dowolnego koloru <span class="red-text">=</span> 20 punktów<br />
+                <i>- "Postój", "Zmiana Kierunku", "Weź dwie", "Weź cztery", "Wyłóż wszystkie", "Postój dla
+                    wszystkich"</i>
+            </li>
+            <br />
+            <li>
+                Dowolna Dzika karta <span class="red-text">=</span> 50 punktów<br />
+                <i>- "Zmiana kierunku + Weź cztery", "Weź sześć", "Weź dziesięć", "Kolorowa ruletka"</i>
+            </li>
+            <h2>Bonus za wyeliminowanie rywali z gry:</h2>
+            <p>250 punktów za każdego gracza wyeliminowanego z gry podczas rundy (ignoruj karty pozostałe w ich ręku
+                momencie wyeliminowania).</p>
+            <p>Pamiętaj, aby na bieżąco zapisywać punktację z każdej rundy. Wygrywa gracz, który jako pierwszy zdobędzie
+                1000 punktów.</p>
+            <h1>DLA GRACZY, KTÓRZY NIE ROZRÓŻNIAJĄ KOLORÓW</h1>
+            <p>
+                Do każdej karty dodano specjalne symbole graficzne pomagające rozpoznać znajdujące się na niej kolory.
+                Dzięki temu gracze z jakimikolwiek problemami w zakresie rozpoznawania kolorów mogą z łatwością brać
+                udział w grze!
+            </p>
+            <img src="img\color-info-no-mercy.png" id="info-color">
+            <!--! FAQ -->
+            <h1>FAQ</h1>
+            <p>
+                <i>Tutaj pojawią się odpowiedzi na najczęściej zadawane pytania.</i>
+            </p>
+        </div>
+        <script src="js\script-card-3d-rotation.js"></script>
+        <!--! FOOTER -->
+        <iframe id="footer-frame" src="footer.html" frameborder="0"></iframe>
+    </main>
+</body>
+
+</html>
