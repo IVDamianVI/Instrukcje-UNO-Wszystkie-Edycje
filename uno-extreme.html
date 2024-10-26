@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\style-progress.css" />
+    <link rel="stylesheet" href="css\style-text-color.css" />
+    <link rel="stylesheet" href="css\style-loader-uno.css" />
+    <link rel="stylesheet" href="css\style-card.css" />
+    <link rel="stylesheet" href="css\style-scrollbar.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="img\uno-logo-extreme.png" />
+
+    <title>UNO Extreme - Zagraj w klasyczną grę karcianą</title>
+
+    <meta name="description"
+        content="Zagraj w klasyczną grę karcianą UNO! Sprawdź zasady, zawartość i jak zacząć grę. UNO to zabawa dla całej rodziny!">
+    <meta name="keywords" content="UNO, gra karciana, zasady UNO, rodzinna gra, zabawa, karty">
+    <meta name="author" content="Damian Grubecki">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="UNO - Zagraj w klasyczną grę karcianą">
+    <meta property="og:description"
+        content="Zagraj w klasyczną grę karcianą UNO! Sprawdź zasady, zawartość i jak zacząć grę. UNO to zabawa dla całej rodziny!">
+    <meta property="og:image" content="https://ivdamianvi.github.io/Instrukcje-UNO/img/uno-extreme-logo.png">
+    <meta property="og:url" content="https://ivdamianvi.github.io/Instrukcje-UNO/uno.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UNO - Zagraj w klasyczną grę karcianą">
+    <meta name="twitter:description"
+        content="Zagraj w klasyczną grę karcianą UNO! Sprawdź zasady, zawartość i jak zacząć grę. UNO to zabawa dla całej rodziny!">
+    <meta name="twitter:image" content="https://ivdamianvi.github.io/Instrukcje-UNO/img/uno-extreme-logo.png">
+    <meta name="twitter:creator" content="Damian Grubecki">
+</head>
+
+
+
+<body>
+    <!--! LOADING SCREEN -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="uno-card"></div>
+            <img class="uno-card" src="cards/uno-back.png" alt="Tył karty UNO">
+        </div>
+    </div>
+    <script src="js\script-loader.js"></script>
+    <!--! PAGE -->
+    <main class="animate__animated animate__fadeIn">
+        <!--! PROGRESS BAR -->
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <script src="js\script-progress.js"></script>
+        <!--! HEADER -->
+        <iframe id="header-frame" src="header.html" frameborder="0"></iframe>
+        <!--! CONTENT -->
+        <div id="main">
+            <br /><br /><br /><br /><br /><br />
+            <div class="card-description">
+                <div class="left-side-page">
+                    <img src="img\uno-box-extreme.png" class="box">
+                </div>
+                <div class="card-description">
+                    <br />
+                    <img src="img\players-2-10.png" class="game-info">
+                    <img src="img\age-7.png" class="game-info">
+                    <h1>Zawartość</h1>
+                    <p><b>112 kart:</b></p>
+                    <ul>
+                        <li>19 kart <span class="blue-text">niebieskich</span> - od 0 do 9</li>
+                        <li>19 kart <span class="green-text">zielonych</span> - od 0 do 9</li>
+                        <li>19 kart <span class="red-text">czerwonych</span> - od 0 do 9</li>
+                        <li>19 kart <span class="yellow-text">żółtych</span> - od 0 do 9</li>
+                        <li>8 kart "Weź dwie" - po 2 w kolorach <span class="blue-text">niebieskim</span>, <span
+                                class="green-text">zielonym</span>, <span class="red-text">czerwonym</span>, <span
+                                class="yellow-text">żółtym</span></li>
+                        <li>8 kart "Zmiana kierunku" - po 2 w kolorach <span class="blue-text">niebieskim</span>, <span
+                                class="green-text">zielonym</span>, <span class="red-text">czerwonym</span>, <span
+                                class="yellow-text">żółtym</span></li>
+                        <li>8 kart "Postój" - po 2 w kolorach <span class="blue-text">niebieskim</span>, <span
+                                class="green-text">zielonym</span>, <span class="red-text">czerwonym</span>, <span
+                                class="yellow-text">żółtym</span></li>
+                        <li>4 karty "Wybierz kolor"</li>
+                        <li>4 karty "Zmiana koloru + weź cztery"</li>
+                        <li>1 karta "Zamiana kart"</li>
+                        <li>3 dzikie karty "Zadanie specjalne"</li>
+                    </ul>
+                </div>
+            </div>
+            <h1>Cel gry</h1>
+            <p>Celem gry jest jak najszybsze pozbycie się wszystkich swoich kart w każdej rundzie i zdobycie punktów za
+                wszystkie karty, które pozostaną w rękach innych graczy. Punkty zdobyte w kolejnych rundach są sumowane.
+                Zwycięża gracz, który jako pierwszy zdobędzie 500 punktów.</p>
+            <h1>Rozpoczęcie rozgrywki</h1>
+            <ol>
+                <li>Każdy gracz ciągnie kartę. Karty rozdaje gracz, który wyciągnie najwyższy numer (karty specjalne z
+                    symbolem traktowane są jako zerowe).</li>
+                <li>Osoba rozdająca tasuje karty i rozdaje po 7 kart dla każdego gracza.</li>
+                <li>Pozostałe karty z talii położone rewersem do góry tworzą stos LOSOWANIA.</li>
+                <li>Górną kartę stosu LOSOWANIA należy odkryć i rozpocząć stos ROZGRYWKI. UWAGA: Jeśli stos ROZGRYWKI
+                    rozpoczyna któraś z kart specjalnych (z symbolem), należy postępować zgodnie ze wskazówkami
+                    zamieszczonymi w części FUNKCJE KART SPECJALNYCH.</li>
+            </ol>
+            <h1>Zagrajmy!</h1>
+            <p>
+                Grę rozpoczyna pierwsza osoba na lewo od rozdającego.
+                <br /><br />
+                Gracz ma za zadanie położyć na stosie ROZGRYWKI kartę ze swojej puli, która ma taki sam numer, kolor lub
+                symbol (symbolami oznaczone są karty specjalne opisane w części FUNKCJE KART SPECJALNYCH).
+                <br /><br />
+                <b>PRZYKŁAD:</b> Jeśli na stosie ROZGRYWKI znajduje się czerwona 7, to gracz musi wyłożyć dowolną
+                czerwoną
+                kartę
+                LUB 7 w dowolnym kolorze. Ewentualnie gracz może wyłożyć kartę "Wybierz kolor" (opis w części FUNKCJE
+                KART
+                SPECJALNYCH).
+                <br /><br />
+                Jeśli gracz nie ma karty, którą mógłby położyć na stosie ROZGRYWKI, musi wziąć kartę ze stosu LOSOWANIA.
+                <br /><br />
+                Jeśli wylosowana karta pasuje do karty na stosie ROZGRYWKI, to gracz może nią zagrać w tej samej
+                kolejce. W
+                przeciwnym wypadku kolejka przechodzi na następną osobę.
+                <br /><br />
+                Gracz może NIE zagrać kartą ze swojej puli, nawet
+                gdyby mógł ją wyłożyć. W takiej sytuacji gracz musi wziąć kartę ze stosu LOSOWANIA. Jeśli karta pasuje,
+                to
+                można ją wyłożyć w tej samej kolejce, jednak po wylosowaniu nie można w tej kolejce zagrać inną kartą ze
+                swojej puli.
+            </p>
+            <h1>Funkcje kart specjalnych</h1>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-+2-r.png" class="card" id="Plus2-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Weź dwie"</b> - jeżeli gracz położy tę kartę, to następny gracz musi wziąć 2 karty ze
+                        stosu
+                        LOSOWANIA i traci kolejkę. Kartę tę można wyłożyć jedynie na kartę o takim samym kolorze lub na
+                        inną
+                        kartę "Weź dwie". Jeśli karta ta zostanie odwrócona na początku rozgrywki, to działa w taki sam
+                        sposób,
+                        jak opisano powyżej.
+                    </p>
+                </div>
+                <script src="js\script-card-change-+2.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-stop-r.png" class="card" id="direction-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Zmiana kierunku"</b> - po wyłożeniu tej karty zmienia się kierunek gry (jeśli
+                        dotychczas
+                        gra
+                        przebiegała w lewą stronę, to teraz będzie przebiegać w prawo i na odwrót). Kartę tę można
+                        wyłożyć
+                        jedynie na kartę o takim samym kolorze lub na inną kartę "Zmiana kierunku". Jeśli karta ta
+                        zostanie
+                        odwrócona na początku
+                        rozgrywki, to grę rozpoczyna osoba rozdająca, a następnie gra toczy się w prawo, a nie w lewo.
+                    </p>
+                </div>
+                <script src="js\script-card-change-direction.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-stop-r.png" class="card" id="stop-card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Postój"</b> - jeżeli gracz położy tę kartę, to następny gracz traci kolejkę i ma
+                        "postój".
+                        Kartę
+                        tę
+                        można wyłożyć jedynie na kartę o takim samym kolorze lub na inną kartę "Postój". Jeśli
+                        karta "Postój"
+                        zostanie odwrócona na początku rozgrywki, to gracz znajdujący się na lewo od rozdającego zostaje
+                        pominięty,
+                        a grę rozpoczyna osoba znajdująca się na lewo od tego gracza.
+                    </p>
+                </div>
+                <script src="js\script-card-change-stop.js"></script>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-special-task.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Dzika karta "Zadanie specjalne"</b> - użyjcie ołówka #2, aby zapisać na karcie dowolną własną
+                        zasadę.
+                        Jedynym ograniczeniem jest tutaj wyobraźnia (i zgoda innych graczy). Jeszcze przed rozpoczęciem
+                        gry
+                        należy
+                        ustalić liczbę dzikich kart w grze. Od graczy zależy, czy użyją tylko 1, czy wszystkich 3.
+                        Ponieważ
+                        jest to
+                        dzika karta specjalna, gracz może ją wyłożyć w swojej kolejce, nawet jeśli ma w swojej puli inną
+                        kartę,
+                        którą mógłby wyłożyć. Gracz wybiera również, od jakiego koloru będzie kontynuowana rozgrywka.
+                        Jeśli
+                        ta
+                        karta zostanie odwrócona na początku rozgrywki, to gracz znajdujący się na lewo od osoby
+                        rozdającej
+                        ustala
+                        kolor, od którego będzie kontynuowana rozgrywka.
+                        <br />
+                        UWAGA: zapisane ołówkiem zasady można ścierać z dzikich kart, zatem za każdym razem gracze mogą
+                        zapisać inne reguły!
+                    </p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-shuffle.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta przetasowania kart z ręki "Zamiana kart"</b>- karta ta pozwala zebrać WSZYSTKIE karty
+                        od KAŻDEGO z graczy. Gracz, który wyłoży tę kartę, tasuje wszystkie karty z rąk graczy, a
+                        następnie rozdaje je z powrotem, zaczynając od gracza po swojej lewej stronie. Wszystkie karty
+                        muszą zostać rozdane. Może to oznaczać, że niektórzy gracze dostaną mniej lub więcej kart, niż
+                        mieli wcześniej w ręce. Następnie gra toczy się w kierunku, w którym przebiegała dotychczas. Ta
+                        karta odgrywa też rolę karty "Wybierz kolor", więc gracz, który ją wyłoży, wybiera kolor, od
+                        którego będzie kontynuowana rozgrywka. Jeśli ta karta zostanie odwrócona na początku rozgrywki,
+                        to gracz znajdujący się na lewo od osoby rozdającej ustala kolor, od którego będzie kontynuowana
+                        rozgrywka.
+                    </p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-view">
+                    <img src="cards\uno-card-pick-color.png" class="card">
+                </div>
+                <div class="card-description">
+                    <p>
+                        <b>Karta "Wybierz kolor"</b> - gracz, który wykłada tę kartę, ustala kolor, od którego będzie
+                        kontynuowana
+                        rozgrywka (dowolny kolor, także ten, który poprzedzał wyłożenie karty "Wybierz kolor"). Gracz
+                        może
+                        wyłożyć
+                        kartę "Wybierz kolor", nawet jeśli ma w swojej puli inną kartę, którą mógłby wyłożyć. Jeśli
+                        karta
+                        "Wybierz
+                        kolor" zostanie odwrócona na początku rozgrywki, to gracz znajdujący się na lewo od osoby
+                        rozdającej
+                        ustala
+                        kolor, od którego będzie kontynuowana rozgrywka.
+                        Karta "Wybierz kolor + weź cztery" - karta ta pozwala wybrać kolor, od którego ma być
+                        kontynuowana
+                        rozgrywka, a PONADTO powoduje, że kolejny gracz musi wziąć 4 karty ze stosu LOSOWANIA i
+                        dodatkowo
+                        opuszcza
+                        kolejkę. Ale to nie wszystko! Gracz może wyłożyć tę kartę tylko wtedy, gdy NIE ma w swojej puli
+                        karty o
+                        takim samym KOLORZE co karta na stosie ROZGRYWKI (jednak gracz może wyłożyć tę kartę, jeśli ma
+                        pasujący
+                        numer lub kartę specjalną). Jeśli karta ta zostanie odwrócona na początku rozgrywki, to należy
+                        ją
+                        zwrócić do
+                        talii i wybrać inną kartę.
+                    </p>
+                </div>
+                <p>
+                    <i>
+                        UWAGA: Jeśli gracz przypuszcza, że jego poprzednik wyłożył kartę, wybierz kolor i weź cztery"
+                        wbrew
+                        zasadom (tj. gracz, który ją wyłożył, ma w swojej puli kartę o pasującym kolorze), to może
+                        rzucić mu
+                        wyzwanie. Podejrzewany gracz musi pokazać swoje karty graczowi rzucającemu wyzwanie. Jeśli
+                        podejrzewany gracz
+                        jest winny, wówczas to on, a nie kolejny gracz, musi wylosować 4 karty. Jednak jeśli
+                        podejrzewany
+                        gracz
+                        jest niewinny, to gracz rzucający wyzwanie musi wylosować 4 karty PLUS 2 dodatkowe karty (razem
+                        6
+                        kart)!
+                    </i>
+                </p>
+            </div>
+            <h1>ABY ZAGRAĆ W KLASYCZNĄ WERSJĘ GRY UNO, USUŃ Z TALII KARTĘ "ZAMIANA KART" ORAZ 3 DZIKIE KARTY "ZADANIE
+                SPECJALNE".</h1>
+            <h1>Korzystanie z dzikich kart "Zadanie specjalne"</h1>
+            <p>Zadanie z dzikich kart "Zadanie specjalne" może być naprawdę szalone. Gracz korzysta z nich, aby
+                przyspieszyć
+                tempo gry, dodać nieco strategii czy zmusić kogoś do zrobienia czegoś śmiesznego. Oto kilka przykładów
+                na
+                początek, co można zapisać na dzikich kartach:</p>
+            <ol>
+                <li>Następny gracz musi ciągnąć karty do chwili wyciągnięcia karty w określonym kolorze.</li>
+                <li>Wszyscy poza Tobą muszą wyrzucić swoje karty specjalne.</li>
+                <li> następny gracz nie może wyłożyć karty, bierze TRZY karty ze stosu LOSOWANIA.</li>
+                <li>Rozegraj dodatkową kolejkę.</li>
+                <li>Następny gracz musi wziąć lub wyrzucić tyle kart, aby mieć 7 kart w ręku.</li>
+                <li>Wszyscy gracze muszą wyrzucić (lub wziąć) tyle kart, aż będą mieli tylko po 3 karty.</li>
+                <li>Wszyscy muszą grać z odkrytymi kartami aż do następnej kolejki.</li>
+                <li>Opowiedz dowcip. Jeśli nikt się nie zaśmieje, weź 4 karty. Jeśli ktoś się zaśmieje, wyrzuć tyle
+                    kart, by zostawić sobie tylko 1 (pamiętaj, aby krzyknąć "UNO").</li>
+                <li>Następny gracz nie może zgiąć łokci do chwili, aż ktoś krzyknie "UNO".</li>
+                <li>Następny gracz musi zaprezentować pianie koguta albo wziąć 4 karty.</li>
+            </ol>
+            <h1>Kończenie partii</h1>
+            <p>
+                Po wyłożeniu przedostatniej karty gracz musi krzyknąć "UNO" (czyli "jeden"), informując innych graczy,
+                że ma
+                tylko jedną kartę. Jeśli gracz nie krzyknie "UNO", a inny gracz przyłapie go na tym przed rozpoczęciem
+                kolejki następnej osoby, to przyłapany gracz musi wziąć dwie karty. Kiedy jeden z graczy pozbędzie się
+                wszystkich kart, runda się kończy. Po podliczeniu punktacji (szczegóły w części "OBLICZANIE PUNKTÓW")
+                gra
+                rozpoczyna się od nowa.
+                <br /><br />
+                Jeśli ostatnią wyłożoną kartą jest "Weź dwie" lub "Wybierz kolor + weź cztery", to kolejny gracz musi
+                dobrać
+                odpowiednio 2 lub 4 karty. Karty te liczą się do łącznego wyniku.
+                <br /><br />
+                Jeśli do czasu wyczerpania całego stosu LOSOWANIA żaden z graczy nie pozbył się wszystkich kart, to
+                należy
+                potasować stos ROZGRYWKI i gra toczy się dalej.
+            </p>
+            <h1>Obliczanie punktów</h1>
+            <p>
+                Gracz, który jako pierwszy w danej rundzie pozbędzie się kart, uzyskuje punkty za wszystkie karty, które
+                zostały w rękach jego przeciwników. Punkty oblicza się następująco:
+            </p>
+            <br />
+            <li>
+                Wszystkie karty z numerami (0-9) <span class="red-text">=</span> liczba punktów zgodna z cyfrą na
+                karcie
+            </li>
+            <br />
+            <li>
+                "Weź dwie" <span class="red-text">=</span> 20 punktów
+            </li>
+            <!--! FAQ -->
+            <h1>FAQ</h1>
+            <p>
+                <i>Tutaj pojawią się odpowiedzi na najczęściej zadawane pytania.</i>
+            </p>
+        </div>
+        <script src="js\script-card-3d-rotation.js"></script>
+        <!--! FOOTER -->
+        <iframe id="footer-frame" src="footer.html" frameborder="0"></iframe>
+    </main>
+</body>
+
+</html>
